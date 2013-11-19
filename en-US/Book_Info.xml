@@ -5,24 +5,27 @@
 ]>
 <bookinfo id="book-Documentation-Red_Hat_XML_Tag_Usage_Guide-Red_Hat_XML_Tag_Usage_Guide">
 	<title>Red Hat XML Tag Usage Guide</title>
-	<subtitle>Enter a short description here.</subtitle>
-	<productname>Documentation</productname>
-	<productnumber>0.1</productnumber>
-	<edition>0</edition>
-	<pubsnumber>0</pubsnumber>
-	<abstract>
+	 <subtitle>Enter a short description here.</subtitle>
+	 <productname>Documentation</productname>
+	 <productnumber>0.1</productnumber>
+	 <edition>0</edition>
+	 <pubsnumber>0</pubsnumber>
+	 <abstract>
 		<para>
 			A short overview and summary of the book's subject and purpose, traditionally no more than one paragraph long. Note: the abstract will appear in the front matter of your book and will also be placed in the description field of the book's RPM spec file.
 		</para>
+
 	</abstract>
-	<corpauthor>
+	 <corpauthor>
 		<inlinemediaobject>
 			<imageobject>
 				<imagedata fileref="Common_Content/images/title_logo.svg" format="SVG" />
 			</imageobject>
+
 		</inlinemediaobject>
+
 	</corpauthor>
-	<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	<xi:include href="Author_Group.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	 <xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	 <xi:include href="Author_Group.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 </bookinfo>
 
