@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Red_Hat_XML_Tag_Usage_Guide.ent">
+%BOOK_ENTITIES;
+]>
+<chapter id="chap-Documentation-Red_Hat_XML_Tag_Usage_Guide-General_Tag_Usage_Guidelines">
+	<title>General Tag Usage Guidelines</title>
+	 <para>
+		This is the egg of the book, and for now everything is in one chapter. That is bound to change, but we have to start somewhere. The place to really start is <ulink url="www.docbook.org/tdg/en/html/docbook.html" />
+	</para>
+	 <section id="sect-Documentation-Red_Hat_XML_Tag_Usage_Guide-General_Tag_Usage_Guidelines-API_Calls">
+		<title>API Calls</title>
+		 <para>
+			Only minimal discussion has occurred with respect to tagging API calls. The results so far are as follows: 
+			<itemizedlist>
+				<listitem>
+					<para>
+						The Middleware Business Unit (BU) uses &lt;code&gt; tags for simplicity's sake, despite their inaccuracy. In a generic sense this is probably fine.
+					</para>
+				</listitem>
+				 <listitem>
+					<para>
+						In more specific cases you need to identify &lt;method&gt;, &lt;function&gt;, and related terms.
+					</para>
+
+				</listitem>
+
+			</itemizedlist>
+
+		</para>
+
+	</section>
+	
+	 <section id="sect-Documentation-Red_Hat_XML_Tag_Usage_Guide-General_Tag_Usage_Guidelines-Applications">
+		<title>Applications</title>
+		 <para>
+			One of the problem areas here is identifying when something is actually an application, a command, a service, or perhaps an "alias"; for example, tools, utilities, and other terms are often used, but there is no clear definition of what these are when it comes to applying DocBook tags.
+		</para>
+		 <para>
+			The following entries have been entered and discussed:
+		</para>
+		 <variablelist id="vari-Documentation-Red_Hat_XML_Tag_Usage_Guide-Applications-Applications_Packages_and_Daemons">
+			<title>Applications, Packages, and Daemons</title>
+			 <varlistentry>
+				<term>PostgreSQL</term>
+				 <listitem>
+					<para>
+						PostgreSQL server and RHEV-M server: In these cases, "PostgreSQL" and "RHEV-M" are both applications and should be tagged as such.
+					</para>
+
+				</listitem>
+
+			</varlistentry>
+			 <varlistentry>
+				<term>postgresql</term>
+				 <listitem>
+					<para>
+						postgresql<superscript>1</superscript>: Refers to the package that you install on the computer. In this case, tag it with a &lt;package&gt; tag.
+					</para>
+					 <para>
+						postgresql<superscript>2</superscript>: Refers to the daemon (or service) that the package provides. In this case, tag it with a &lt;systemitem class="daemon"&gt; tag.
+					</para>
+
+				</listitem>
+
+			</varlistentry>
+
+		</variablelist>
+
+	</section>
+	
+
+</chapter>
+
