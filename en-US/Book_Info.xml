@@ -5,14 +5,14 @@
 ]>
 <bookinfo id="book-Documentation-Red_Hat_XML_Tag_Usage_Guide-Red_Hat_XML_Tag_Usage_Guide">
 	<title>Red Hat XML Tag Usage Guide</title>
-	 <subtitle>Enter a short description here.</subtitle>
+	 <subtitle>Recommended practices for using DocBook XML tags in Red&nbsp;Hat documentation.</subtitle>
 	 <productname>Documentation</productname>
 	 <productnumber>0.1</productnumber>
 	 <edition>0</edition>
 	 <pubsnumber>0</pubsnumber>
 	 <abstract>
 		<para>
-			A short overview and summary of the book's subject and purpose, traditionally no more than one paragraph long. Note: the abstract will appear in the front matter of your book and will also be placed in the description field of the book's RPM spec file.
+			This book describes the recommended DocBook XML tags to use in Red&nbsp;Hat documentation. It is a work in progress, and especially in the early stages of development covers questions that have been raised about the correct or preferred tags to use. It is currently far from complete or definitive, and needs considerable help.
 		</para>
 
 	</abstract>

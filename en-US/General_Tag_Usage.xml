@@ -17,6 +17,7 @@
 					<para>
 						The Middleware Business Unit (BU) uses &lt;code&gt; tags for simplicity's sake, despite their inaccuracy. In a generic sense this is probably fine.
 					</para>
+
 				</listitem>
 				 <listitem>
 					<para>
@@ -60,6 +61,38 @@
 					 <para>
 						postgresql<superscript>2</superscript>: Refers to the daemon (or service) that the package provides. In this case, tag it with a &lt;systemitem class="daemon"&gt; tag.
 					</para>
+
+				</listitem>
+
+			</varlistentry>
+
+		</variablelist>
+
+	</section>
+	
+	 <section id="sect-Documentation-Red_Hat_XML_Tag_Usage_Guide-General_Tag_Usage_Guidelines-User_Interface_Objects">
+		<title>User Interface Objects</title>
+		 <para>
+			This section describes the preferred methods for tagging various user interface objects.
+		</para>
+		 <variablelist id="vari-Documentation-Red_Hat_XML_Tag_Usage_Guide-User_Interface_Objects-Menus_Submenus_and_Menu_Items">
+			<title>Menus, Submenus, and Menu Items</title>
+			 <varlistentry>
+				<term>GUI Menus</term>
+				 <listitem>
+					<para>
+						Use the following syntax and tags when documenting GUI menus, submenus, and menu items. Note that there are no spaces or other punctuation between tags or elements. See <xref linkend="exam-Documentation-Red_Hat_XML_Tag_Usage_Guide-Menus_Submenus_and_Menu_Items-Example_Output_Using_Prescribed_GUI_Tags" /> for example output.
+					</para>
+					 <para>
+						&lt;menuchoice&gt;&lt;guimenu&gt;System&lt;/guimenu&gt;&lt;guisubmenu&gt;Preferences&lt;/guisubmenu&gt;&lt;guimenuitem&gt;Mouse&lt;/guimenuitem&gt;&lt;/menuchoice&gt;
+					</para>
+					 <example id="exam-Documentation-Red_Hat_XML_Tag_Usage_Guide-Menus_Submenus_and_Menu_Items-Example_Output_Using_Prescribed_GUI_Tags">
+						<title>Example Output Using Prescribed GUI Tags</title>
+						 <para>
+							<menuchoice><guimenu>System</guimenu><guisubmenu>Preferences</guisubmenu><guimenuitem>Mouse</guimenuitem></menuchoice>
+						</para>
+
+					</example>
 
 				</listitem>
 

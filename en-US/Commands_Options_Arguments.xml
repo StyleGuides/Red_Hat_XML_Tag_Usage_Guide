@@ -3,13 +3,12 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "Red_Hat_XML_Tag_Usage_Guide.ent">
 %BOOK_ENTITIES;
 ]>
-<section id="sect-Documentation-Red_Hat_XML_Tag_Usage_Guide-Test_Section_0">
+<section id="sect-Documentation-Red_Hat_XML_Tag_Usage_Guide-Commands_Options_and_Arguments">
 	<title>Commands, Options, and Arguments</title>
 	 <para>
 		This is a test paragraph in a section
 	</para>
-	
-	 <variablelist id="vari-Documentation-Red_Hat_XML_Tag_Usage_Guide-Test_Section_0-Title_for_ID_purposes">
+	 <variablelist id="vari-Documentation-Red_Hat_XML_Tag_Usage_Guide-Commands_Options_and_Arguments-Title_for_ID_purposes">
 		<title>Title for ID purposes</title>
 		 <varlistentry>
 			<term>Term</term>
