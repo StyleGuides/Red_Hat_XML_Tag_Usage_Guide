@@ -8,6 +8,56 @@
 	 <para>
 		This is the egg of the book, and for now everything is in one chapter. That is bound to change, but we have to start somewhere. The place to really start is <ulink url="www.docbook.org/tdg/en/html/docbook.html" />
 	</para>
+	 <section id="sect-Documentation-Red_Hat_XML_Tag_Usage_Guide-General_Tag_Usage_Guidelines-Abbreviations_Acronyms_and_Initialisms">
+		<title>Abbreviations, Acronyms, and Initialisms</title>
+		 <para>
+			I want to start with <quote>most of the time</quote> because I think saying <quote>always</quote> or <quote>never</quote> is highly problematic. That probably applies to everything. Note that this topic is only about how to mark up these elements in DocBook. For a discussion about how to use abbreviations, acronyms, and initialisms correctly, see <citetitle>The Red&nbsp;Hat Writing&nbsp;Style&nbsp;Guide</citetitle> at <ulink url="https://url.corp.redhat.com/RHStyleGuide" />
+		</para>
+		 <important>
+			<para>
+				Discussion is ongoing about how to mark up abbreviations, acronyms, and initialisms. Most of the time the advice here is fine. If you are not sure, ask.
+			</para>
+
+		</important>
+		 <variablelist>
+			<varlistentry>
+				<term>abbreviations</term>
+				 <listitem>
+					<para>
+						Is there a case for not using &lt;abbrev&gt; tags? Quite a few things fall under the heading of abbreviations, including initialisms, so use this tag unless you find a good reason not to, and then tell me what it is.
+					</para>
+					 <para>
+						&lt;abbrev&gt; tags make <abbrev>FTP</abbrev> look like this if it was uppercase to start with. If it were lowercase then <abbrev>ftp</abbrev> would look like this.
+					</para>
+
+				</listitem>
+
+			</varlistentry>
+			 <varlistentry>
+				<term>acronyms</term>
+				 <listitem>
+					<para>
+						Use the appropriate tag, that is &lt;acronym&gt;, to mark up your acronyms. These tags make <acronym>FORTRAN</acronym> look like this.
+					</para>
+
+				</listitem>
+
+			</varlistentry>
+			 <varlistentry>
+				<term>initialisms</term>
+				 <listitem>
+					<para>
+						DocBook does not provide a specific tag for initialisms. Use &lt;abbrev&gt; instead.
+					</para>
+
+				</listitem>
+
+			</varlistentry>
+
+		</variablelist>
+
+	</section>
+	
 	 <section id="sect-Documentation-Red_Hat_XML_Tag_Usage_Guide-General_Tag_Usage_Guidelines-API_Calls">
 		<title>API Calls</title>
 		 <para>
