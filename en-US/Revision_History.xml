@@ -8,6 +8,24 @@
 	 <simpara>
 		<revhistory>
 			<revision>
+				<revnumber>0.0-2</revnumber>
+				 <date>Thu Jan 09 2014</date>
+				 <author>
+					<firstname>David</firstname>
+					 <surname>O'Brien</surname>
+					 <email>daobrien@redhat.com</email>
+
+				</author>
+				 <revdescription>
+					<simplelist>
+						<member>BZ 1050778 Add entry for usage of &lt;quote&gt; tags.</member>
+
+					</simplelist>
+
+				</revdescription>
+
+			</revision>
+			 <revision>
 				<revnumber>0.0-1</revnumber>
 				 <date>Thu Nov 21 2013</date>
 				 <author>
