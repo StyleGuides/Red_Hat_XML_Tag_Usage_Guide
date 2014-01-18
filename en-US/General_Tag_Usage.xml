@@ -120,17 +120,18 @@
 
 	</section>
 	
+	 <xi:include href="Commands_Options_Arguments.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 	 <section id="sect-Documentation-Red_Hat_XML_Tag_Usage_Guide-General_Tag_Usage_Guidelines-Punctuation">
 		<title>Punctuation</title>
 		 <para>
 			This section describes the preferred methods for tagging punctuation marks should that prove necessary. Ordinarily this is not required, but in some cases, for example ellipses and greater than and less than symbols, using DocBook tags or entities may be required to ensure the integrity of the XML file.
 		</para>
-		 <important>
+		 <note>
 			<para>
 				Refer to the appropriate sections of <citetitle>The IBM Style Guide</citetitle> and other standard references for general punctuation guidelines.
 			</para>
 
-		</important>
+		</note>
 		 <variablelist>
 			<varlistentry>
 				<term>Quotation Marks</term>
@@ -145,11 +146,10 @@
 
 					</para>
 					 <para>
-						The decision not to use &lt;quote&gt; tags whenever double quotation marks are required in Red&nbsp;Hat documentation was reached after a lengthy discussion<footnote>
-						<para>
+						The decision not to use &lt;quote&gt; tags whenever double quotation marks are required in Red&nbsp;Hat documentation was reached after a lengthy discussion<footnote> <para>
 							<ulink url="https://mojo.redhat.com/thread/8046" />
 						</para>
-						</footnote> involving both writers and translators. No significant justification for their use was provided, and several good reasons not to use them were offered.
+						 </footnote> involving both writers and translators. No significant justification for their use was provided, and several good reasons not to use them were offered.
 					</para>
 					 <para>
 						As a result of this discussion, the current recommendation is to use the standard quotation mark key on your keyboard whenever single or double quotation marks are required in Red&nbsp;Hat documentation.

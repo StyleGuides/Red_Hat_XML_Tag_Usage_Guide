@@ -6,22 +6,56 @@
 <section id="sect-Documentation-Red_Hat_XML_Tag_Usage_Guide-Commands_Options_and_Arguments">
 	<title>Commands, Options, and Arguments</title>
 	 <para>
-		This is a test paragraph in a section
+		This chapter describes the recommended DocBook tags to use for commands, options, arguments, and other parameters related primarily to command-line examples and procedures. Exceptions are common, and each case must be evaluated individually. The purpose of this chapter is to provide a starting point for delivering consistent results as often as possible.
 	</para>
-	 <variablelist id="vari-Documentation-Red_Hat_XML_Tag_Usage_Guide-Commands_Options_and_Arguments-Title_for_ID_purposes">
-		<title>Title for ID purposes</title>
-		 <varlistentry>
-			<term>Term</term>
-			 <listitem>
-				<para>
-					blah
-				</para>
+	 <note>
+		<para>
+			In all cases, refer to <ulink url="http://www.docbook.org/tdg/en/html/docbook.html"><citetitle>DocBook: The Definitive Guide</citetitle></ulink> and <citetitle>The IBM Style Guide</citetitle> for initial guidance.
+		</para>
 
-			</listitem>
+	</note>
+	 <section id="sect-Documentation-Red_Hat_XML_Tag_Usage_Guide-Commands_Options_and_Arguments-Documenting_Commands">
+		<title>Documenting Commands</title>
+		 <para>
+			Commands generally appear in two main scenarios: inline, as part of a general discussion or description of the command; or in a displayed block, as part of an example or procedural step. The second scenario often includes several command options that apply to the specific example or task.
+		</para>
+		 <para>
+			In keeping with the philosophy of "never say never," commands almost always appear inside &lt;command&gt; tags. Even when used in &lt;screen&gt; or similar tags, commands need to be marked up to differentiate them from other text that may appear in a displayed block, for example, computer output. This is especially true because, according to <citetitle>The IBM Style Guide,</citetitle> commands should not be preceded by any sort of command prompt, for example a dollar (&dollar;) or number (#) sign. If they appear as part of body text, commands need to be differentiated from the surrounding text.
+		</para>
+		 <example id="exam-Documentation-Red_Hat_XML_Tag_Usage_Guide-Documenting_Commands-Marking_up_Commands_in_Body_Text">
+			<title>Marking up Commands in Body Text</title>
+			 <para>
+				Use the &lt;command&gt;ifconfig&lt;/command&gt; command to configure network interfaces.
+			</para>
+			 <para>
+				This is rendered as follows:
+			</para>
+			 <para>
+				Use the <command>ifconfig</command> command to configure network interfaces.
+			</para>
 
-		</varlistentry>
+		</example>
+		 <example id="exam-Documentation-Red_Hat_XML_Tag_Usage_Guide-Documenting_Commands-Marking_up_Commands_in_Examples">
+			<title>Marking up Commands in Examples</title>
+			 <para>
+				Enter the following command to determine the status of the firewall:
+			</para>
+			 <para>
+				&lt;screen&gt;&lt;command&gt;service &lt;option&gt;iptables status&lt;/option&gt;&lt;/command&gt;&lt;/screen&gt;
+			</para>
+			 <para>
+				This is rendered as follows:
+			</para>
+			 <para>
+				Enter the following command to determine the status of the firewall: 
+<screen><command>service <option>iptables status</option></command></screen>
 
-	</variablelist>
+			</para>
+
+		</example>
+
+	</section>
+	
 
 </section>
 
