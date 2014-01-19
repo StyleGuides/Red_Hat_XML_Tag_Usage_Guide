@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-<!ENTITY % BOOK_ENTITIES SYSTEM "Red_Hat_XML_Tag_Usage_Guide.ent">
+<!ENTITY % BOOK_ENTITIES SYSTEM "Red_Hat_DocBook_XML_Usage_Guide.ent">
 %BOOK_ENTITIES;
 ]>
-<section id="sect-Documentation-Red_Hat_XML_Tag_Usage_Guide-Test_Section_0">
+<section id="sect-Policy-Red_Hat_DocBook_XML_Usage_Guide-Test_Section_0">
 	<title>Test Section 0</title>
 	 <para>
 		This is a test paragraph in a section
 	</para>
-	 <variablelist id="vari-Documentation-Red_Hat_XML_Tag_Usage_Guide-Test_Section_0-Title_for_ID_purposes">
+	 <variablelist id="vari-Policy-Red_Hat_DocBook_XML_Usage_Guide-Test_Section_0-Title_for_ID_purposes">
 		<title>Title for ID purposes</title>
 		 <varlistentry>
 			<term>Term</term>

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <!DOCTYPE bookinfo PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-<!ENTITY % BOOK_ENTITIES SYSTEM "Red_Hat_XML_Tag_Usage_Guide.ent">
+<!ENTITY % BOOK_ENTITIES SYSTEM "Red_Hat_DocBook_XML_Usage_Guide.ent">
 %BOOK_ENTITIES;
 ]>
-<bookinfo id="book-Documentation-Red_Hat_XML_Tag_Usage_Guide-Red_Hat_XML_Tag_Usage_Guide">
-	<title>Red Hat XML Tag Usage Guide</title>
+<bookinfo id="book-Policy-Red_Hat_DocBook_XML_Usage_Guide-Red_Hat_DocBook_XML_Usage_Guide">
+	<title>Red Hat DocBook XML Usage Guide</title>
 	 <subtitle>Recommended practices for using DocBook XML tags in Red&nbsp;Hat documentation.</subtitle>
-	 <productname>Documentation</productname>
+	 <productname>Policy</productname>
 	 <productnumber>0.1</productnumber>
 	 <edition>1</edition>
 	 <pubsnumber>0</pubsnumber>

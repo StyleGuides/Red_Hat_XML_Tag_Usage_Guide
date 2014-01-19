@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-<!ENTITY % BOOK_ENTITIES SYSTEM "Red_Hat_XML_Tag_Usage_Guide.ent">
+<!ENTITY % BOOK_ENTITIES SYSTEM "Red_Hat_DocBook_XML_Usage_Guide.ent">
 %BOOK_ENTITIES;
 ]>
-<section id="sect-Documentation-Red_Hat_XML_Tag_Usage_Guide-Commands_Options_and_Arguments">
+<section id="sect-Policy-Red_Hat_DocBook_XML_Usage_Guide-Commands_Options_and_Arguments">
 	<title>Commands, Options, and Arguments</title>
 	 <para>
 		This chapter describes the recommended DocBook tags to use for commands, options, arguments, and other parameters related primarily to command-line examples and procedures. Exceptions are common, and each case must be evaluated individually. The purpose of this chapter is to provide a starting point for delivering consistent results as often as possible.
@@ -14,7 +14,7 @@
 		</para>
 
 	</note>
-	 <section id="sect-Documentation-Red_Hat_XML_Tag_Usage_Guide-Commands_Options_and_Arguments-Documenting_Commands">
+	 <section id="sect-Policy-Red_Hat_DocBook_XML_Usage_Guide-Commands_Options_and_Arguments-Documenting_Commands">
 		<title>Documenting Commands</title>
 		 <para>
 			Commands generally appear in two main scenarios: inline, as part of a general discussion or description of the command; or in a displayed block, as part of an example or procedural step. The second scenario often includes several command options that apply to the specific example or task.
@@ -22,7 +22,8 @@
 		 <para>
 			In keeping with the philosophy of "never say never," commands almost always appear inside &lt;command&gt; tags. Even when used in &lt;screen&gt; or similar tags, commands need to be marked up to differentiate them from other text that may appear in a displayed block, for example, computer output. This is especially true because, according to <citetitle>The IBM Style Guide,</citetitle> commands should not be preceded by any sort of command prompt, for example a dollar (&dollar;) or number (#) sign. If they appear as part of body text, commands need to be differentiated from the surrounding text.
 		</para>
-		 <example id="exam-Documentation-Red_Hat_XML_Tag_Usage_Guide-Documenting_Commands-Marking_up_Commands_in_Body_Text">
+		 <remark>The following examples are yet to be confirmed.</remark>
+		 <example id="exam-Policy-Red_Hat_DocBook_XML_Usage_Guide-Documenting_Commands-Marking_up_Commands_in_Body_Text">
 			<title>Marking up Commands in Body Text</title>
 			 <para>
 				Use the &lt;command&gt;ifconfig&lt;/command&gt; command to configure network interfaces.
@@ -35,7 +36,7 @@
 			</para>
 
 		</example>
-		 <example id="exam-Documentation-Red_Hat_XML_Tag_Usage_Guide-Documenting_Commands-Marking_up_Commands_in_Examples">
+		 <example id="exam-Policy-Red_Hat_DocBook_XML_Usage_Guide-Documenting_Commands-Marking_up_Commands_in_Examples">
 			<title>Marking up Commands in Examples</title>
 			 <para>
 				Enter the following command to determine the status of the firewall:
@@ -51,6 +52,27 @@
 <screen><command>service <option>iptables status</option></command></screen>
 
 			</para>
+
+		</example>
+
+	</section>
+	
+	 <section id="sect-Policy-Red_Hat_DocBook_XML_Usage_Guide-Commands_Options_and_Arguments-Documenting_Command_Options">
+		<title>Documenting Command Options</title>
+		 <remark>This section is draft and exists primarily to provide examples for review.</remark>
+		 <para>
+			See <ulink url="https://mojo.redhat.com/thread/926079">How to Mark up Command Options in DocBook XML</ulink> for the relevant discussion.
+		</para>
+		 <example id="exam-Policy-Red_Hat_DocBook_XML_Usage_Guide-Documenting_Command_Options-Command_with_Option_Tags">
+			<title>Command with Option Tags</title>
+			 
+<screen><command>adduser <option>--user <parameter><replaceable>user name</replaceable></parameter> --homedir <parameter><replaceable>home directory</replaceable></parameter></option></command></screen>
+
+		</example>
+		 <example id="exam-Policy-Red_Hat_DocBook_XML_Usage_Guide-Documenting_Command_Options-Command_without_Option_Tags">
+			<title>Command without Option Tags</title>
+			 
+<screen><command>adduser --user <replaceable>user name</replaceable> --homedir <replaceable>home directory</replaceable></command></screen>
 
 		</example>
 

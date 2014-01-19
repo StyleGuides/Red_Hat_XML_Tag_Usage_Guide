@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-<!ENTITY % BOOK_ENTITIES SYSTEM "Red_Hat_XML_Tag_Usage_Guide.ent">
+<!ENTITY % BOOK_ENTITIES SYSTEM "Red_Hat_DocBook_XML_Usage_Guide.ent">
 %BOOK_ENTITIES;
 ]>
-<chapter id="chap-Documentation-Red_Hat_XML_Tag_Usage_Guide-General_Tag_Usage_Guidelines">
+<chapter id="chap-Policy-Red_Hat_DocBook_XML_Usage_Guide-General_Tag_Usage_Guidelines">
 	<title>General Tag Usage Guidelines</title>
 	 <para>
 		This is the egg of the book, and for now everything is in one chapter. That is bound to change, but we have to start somewhere. The place to really start is <ulink url="www.docbook.org/tdg/en/html/docbook.html" />
 	</para>
-	 <section id="sect-Documentation-Red_Hat_XML_Tag_Usage_Guide-General_Tag_Usage_Guidelines-Abbreviations_Acronyms_and_Initialisms">
+	 <section id="sect-Policy-Red_Hat_DocBook_XML_Usage_Guide-General_Tag_Usage_Guidelines-Abbreviations_Acronyms_and_Initialisms">
 		<title>Abbreviations, Acronyms, and Initialisms</title>
 		 <para>
 			I want to start with "most of the time" because I think saying "always" or "never" is highly problematic. That probably applies to everything. Note that this topic is only about how to mark up these elements in DocBook. For a discussion about how to use abbreviations, acronyms, and initialisms correctly, see <citetitle>The Red&nbsp;Hat Writing&nbsp;Style&nbsp;Guide</citetitle> at <ulink url="https://url.corp.redhat.com/RHStyleGuide" />
@@ -58,7 +58,7 @@
 
 	</section>
 	
-	 <section id="sect-Documentation-Red_Hat_XML_Tag_Usage_Guide-General_Tag_Usage_Guidelines-API_Calls">
+	 <section id="sect-Policy-Red_Hat_DocBook_XML_Usage_Guide-General_Tag_Usage_Guidelines-API_Calls">
 		<title>API Calls</title>
 		 <para>
 			Only minimal discussion has occurred with respect to tagging API calls. The results so far are as follows: 
@@ -82,7 +82,7 @@
 
 	</section>
 	
-	 <section id="sect-Documentation-Red_Hat_XML_Tag_Usage_Guide-General_Tag_Usage_Guidelines-Applications">
+	 <section id="sect-Policy-Red_Hat_DocBook_XML_Usage_Guide-General_Tag_Usage_Guidelines-Applications">
 		<title>Applications</title>
 		 <para>
 			One of the problem areas here is identifying when something is actually an application, a command, a service, or perhaps an "alias"; for example, tools, utilities, and other terms are often used, but there is no clear definition of what these are when it comes to applying DocBook tags.
@@ -90,7 +90,7 @@
 		 <para>
 			The following entries have been entered and discussed:
 		</para>
-		 <variablelist id="vari-Documentation-Red_Hat_XML_Tag_Usage_Guide-Applications-Applications_Packages_and_Daemons">
+		 <variablelist id="vari-Policy-Red_Hat_DocBook_XML_Usage_Guide-Applications-Applications_Packages_and_Daemons">
 			<title>Applications, Packages, and Daemons</title>
 			 <varlistentry>
 				<term>PostgreSQL</term>
@@ -121,7 +121,7 @@
 	</section>
 	
 	 <xi:include href="Commands_Options_Arguments.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	 <section id="sect-Documentation-Red_Hat_XML_Tag_Usage_Guide-General_Tag_Usage_Guidelines-Punctuation">
+	 <section id="sect-Policy-Red_Hat_DocBook_XML_Usage_Guide-General_Tag_Usage_Guidelines-Punctuation">
 		<title>Punctuation</title>
 		 <para>
 			This section describes the preferred methods for tagging punctuation marks should that prove necessary. Ordinarily this is not required, but in some cases, for example ellipses and greater than and less than symbols, using DocBook tags or entities may be required to ensure the integrity of the XML file.
@@ -169,23 +169,23 @@
 
 	</section>
 	
-	 <section id="sect-Documentation-Red_Hat_XML_Tag_Usage_Guide-General_Tag_Usage_Guidelines-User_Interface_Objects">
+	 <section id="sect-Policy-Red_Hat_DocBook_XML_Usage_Guide-General_Tag_Usage_Guidelines-User_Interface_Objects">
 		<title>User Interface Objects</title>
 		 <para>
 			This section describes the preferred methods for tagging various user interface objects.
 		</para>
-		 <variablelist id="vari-Documentation-Red_Hat_XML_Tag_Usage_Guide-User_Interface_Objects-Menus_Submenus_and_Menu_Items">
+		 <variablelist id="vari-Policy-Red_Hat_DocBook_XML_Usage_Guide-User_Interface_Objects-Menus_Submenus_and_Menu_Items">
 			<title>Menus, Submenus, and Menu Items</title>
 			 <varlistentry>
 				<term>GUI Menus</term>
 				 <listitem>
 					<para>
-						Use the following syntax and tags when documenting GUI menus, submenus, and menu items. Note that there are no spaces or other punctuation between tags or elements. See <xref linkend="exam-Documentation-Red_Hat_XML_Tag_Usage_Guide-Menus_Submenus_and_Menu_Items-Example_Output_Using_Prescribed_GUI_Tags" /> for example output.
+						Use the following syntax and tags when documenting GUI menus, submenus, and menu items. Note that there are no spaces or other punctuation between tags or elements. See <xref linkend="exam-Policy-Red_Hat_DocBook_XML_Usage_Guide-Menus_Submenus_and_Menu_Items-Example_Output_Using_Prescribed_GUI_Tags" /> for example output.
 					</para>
 					 <para>
 						&lt;menuchoice&gt;&lt;guimenu&gt;System&lt;/guimenu&gt;&lt;guisubmenu&gt;Preferences&lt;/guisubmenu&gt;&lt;guimenuitem&gt;Mouse&lt;/guimenuitem&gt;&lt;/menuchoice&gt;
 					</para>
-					 <example id="exam-Documentation-Red_Hat_XML_Tag_Usage_Guide-Menus_Submenus_and_Menu_Items-Example_Output_Using_Prescribed_GUI_Tags">
+					 <example id="exam-Policy-Red_Hat_DocBook_XML_Usage_Guide-Menus_Submenus_and_Menu_Items-Example_Output_Using_Prescribed_GUI_Tags">
 						<title>Example Output Using Prescribed GUI Tags</title>
 						 <para>
 							<menuchoice><guimenu>System</guimenu><guisubmenu>Preferences</guisubmenu><guimenuitem>Mouse</guimenuitem></menuchoice>
