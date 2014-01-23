@@ -20,7 +20,7 @@
 			Commands generally appear in two main scenarios: inline, as part of a general discussion or description of the command; or in a displayed block, as part of an example or procedural step. The second scenario often includes several command options that apply to the specific example or task.
 		</para>
 		 <para>
-			In keeping with the philosophy of "never say never," commands almost always appear inside &lt;command&gt; tags. Even when used in &lt;screen&gt; or similar tags, commands need to be marked up to differentiate them from other text that may appear in a displayed block, for example, computer output. This is especially true because, according to <citetitle>The IBM Style Guide,</citetitle> commands should not be preceded by any sort of command prompt, for example a dollar (&dollar;) or number (#) sign. If they appear as part of body text, commands need to be differentiated from the surrounding text.
+			In keeping with the philosophy of "never say never," commands almost always appear inside &lt;command&gt; tags. Even when used in &lt;screen&gt; or similar tags, commands need to be marked up to differentiate them from other text that may appear in a displayed block, for example, computer output. If they appear as part of body text, commands need to be differentiated from the surrounding text.
 		</para>
 		 <remark>The following examples are yet to be confirmed.</remark>
 		 <example id="exam-Policy-Red_Hat_DocBook_XML_Usage_Guide-Documenting_Commands-Marking_up_Commands_in_Body_Text">
@@ -42,18 +42,23 @@
 				Enter the following command to determine the status of the firewall:
 			</para>
 			 <para>
-				&lt;screen&gt;&lt;command&gt;service &lt;option&gt;iptables status&lt;/option&gt;&lt;/command&gt;&lt;/screen&gt;
+				&lt;screen&gt;&lt;command&gt;# service iptables status&lt;/command&gt;&lt;/screen&gt;
 			</para>
 			 <para>
 				This is rendered as follows:
 			</para>
 			 <para>
 				Enter the following command to determine the status of the firewall: 
-<screen><command>service <option>iptables status</option></command></screen>
+<screen><command># service iptables status</command></screen>
 
 			</para>
 
 		</example>
+		<note>
+			<para>
+				The command prompt is only used in the displayed block example. This indicates to the reader the class of user required to run the command; whether that user requires <systemitem class="username">root</systemitem> privileges or not.
+			</para>
+		</note>
 
 	</section>
 	
