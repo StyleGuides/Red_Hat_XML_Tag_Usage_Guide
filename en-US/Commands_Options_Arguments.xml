@@ -10,7 +10,7 @@
 	</para>
 	 <note>
 		<para>
-			In all cases, refer to <ulink url="http://www.docbook.org/tdg/en/html/docbook.html"><citetitle>DocBook: The Definitive Guide</citetitle></ulink> and <citetitle>The IBM Style Guide</citetitle> for initial guidance.
+			In all cases, see <ulink url="http://www.docbook.org/tdg/en/html/docbook.html"><citetitle>DocBook: The Definitive Guide</citetitle></ulink> and <citetitle>The IBM Style Guide</citetitle> for initial guidance.
 		</para>
 
 	</note>
@@ -22,7 +22,9 @@
 		 <para>
 			In keeping with the philosophy of "never say never," commands almost always appear inside &lt;command&gt; tags. Even when used in &lt;screen&gt; or similar tags, commands need to be marked up to differentiate them from other text that may appear in a displayed block, for example, computer output. If they appear as part of body text, commands need to be differentiated from the surrounding text.
 		</para>
-		 <remark>The following examples are yet to be confirmed.</remark>
+		 <para>
+			The Cloud documentation team has adopted the following practice for marking up commands and command options.
+		</para>
 		 <example id="exam-Policy-Red_Hat_DocBook_XML_Usage_Guide-Documenting_Commands-Marking_up_Commands_in_Body_Text">
 			<title>Marking up Commands in Body Text</title>
 			 <para>
@@ -54,30 +56,44 @@
 			</para>
 
 		</example>
-		<note>
+		 <note>
 			<para>
 				The command prompt is only used in the displayed block example. This indicates to the reader the class of user required to run the command; whether that user requires <systemitem class="username">root</systemitem> privileges or not.
 			</para>
+
 		</note>
 
 	</section>
 	
 	 <section id="sect-Policy-Red_Hat_DocBook_XML_Usage_Guide-Commands_Options_and_Arguments-Documenting_Command_Options">
 		<title>Documenting Command Options</title>
-		 <remark>This section is draft and exists primarily to provide examples for review.</remark>
-		 <para>
-			See <ulink url="https://mojo.redhat.com/thread/926079">How to Mark up Command Options in DocBook XML</ulink> for the relevant discussion.
-		</para>
-		 <example id="exam-Policy-Red_Hat_DocBook_XML_Usage_Guide-Documenting_Command_Options-Command_with_Option_Tags">
-			<title>Command with Option Tags</title>
-			 
-<screen><command>adduser <option>--user <parameter><replaceable>user name</replaceable></parameter> --homedir <parameter><replaceable>home directory</replaceable></parameter></option></command></screen>
+		 <formalpara id="form-Policy-Red_Hat_DocBook_XML_Usage_Guide-Documenting_Command_Options-Marking_up_Command_Options_in_Body_Text">
+			<title>Marking up Command Options in Body Text</title>
+			 <para>
+				Use the appropriate DocBook tag to mark up options, arguments, values, and similar items when they appear in body text. In all cases, see <ulink url="http://www.docbook.org/tdg/en/html/docbook.html"><citetitle>DocBook: The Definitive Guide</citetitle></ulink> for initial guidance.
+			</para>
 
-		</example>
-		 <example id="exam-Policy-Red_Hat_DocBook_XML_Usage_Guide-Documenting_Command_Options-Command_without_Option_Tags">
-			<title>Command without Option Tags</title>
+		</formalpara>
+		 <para>
+			If no tag or solution presents itself, ask in #donuts on IRC, or raise a question in the <ulink url="https://mojo.redhat.com/groups/red-hat-writers-guild/projects/docbook-xml-tag-usage-guide">DocBook XML Tag Usage Guide</ulink> project.
+		</para>
+		 <formalpara id="form-Policy-Red_Hat_DocBook_XML_Usage_Guide-Documenting_Command_Options-Marking_up_Command_Options_in_Examples">
+			<title>Marking up Command Options in Examples</title>
+			 <para>
+				Do not include any specific markup for options in command examples, except for replaceable values.
+			</para>
+
+		</formalpara>
+		 <example id="exam-Policy-Red_Hat_DocBook_XML_Usage_Guide-Documenting_Command_Options-Marking_up_Command_Options_in_Examples">
+			<title>Marking up Command Options in Examples</title>
+			 <para>
+				&lt;screen&gt;&lt;command&gt;$ adduser --user &lt;replaceable&gt;user&amp;nbsp;name&lt;/replaceable&gt; --homedir &lt;replaceable&gt;home&amp;nbsp;directory&lt;/replaceable&gt;&lt;/command&gt;&lt;/screen&gt;
+			</para>
+			 <para>
+				This is rendered as follows:
+			</para>
 			 
-<screen><command>adduser --user <replaceable>user name</replaceable> --homedir <replaceable>home directory</replaceable></command></screen>
+<screen><command>$ adduser --user <replaceable>user&nbsp;name</replaceable> --homedir <replaceable>home&nbsp;directory</replaceable></command></screen>
 
 		</example>
 
