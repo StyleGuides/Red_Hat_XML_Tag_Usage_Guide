@@ -8,6 +8,24 @@
 	 <simpara>
 		<revhistory>
 			<revision>
+				<revnumber>0.0-3</revnumber>
+				 <date>Mon Feb 03 2014</date>
+				 <author>
+					<firstname>David</firstname>
+					 <surname>O'Brien</surname>
+					 <email>daobrien@redhat.com</email>
+
+				</author>
+				 <revdescription>
+					<simplelist>
+						<member>Revised section on how to tag abbreviations and acronyms.</member>
+
+					</simplelist>
+
+				</revdescription>
+
+			</revision>
+			 <revision>
 				<revnumber>0.0-2</revnumber>
 				 <date>Sun Jan 19 2014</date>
 				 <author>
