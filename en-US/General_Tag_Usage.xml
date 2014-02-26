@@ -20,6 +20,7 @@
 			<para>
 				For a discussion about how to use abbreviations, acronyms, and initialisms correctly, see <citetitle>The Red&nbsp;Hat Writing&nbsp;Style&nbsp;Guide</citetitle> at <ulink url="https://url.corp.redhat.com/RHStyleGuide" />
 			</para>
+
 		</note>
 
 	</section>
@@ -158,6 +159,30 @@
 						</para>
 
 					</example>
+
+				</listitem>
+
+			</varlistentry>
+
+		</variablelist>
+
+	</section>
+	
+	 <section id="sect-Policy-Red_Hat_DocBook_XML_Usage_Guide-General_Tag_Usage_Guidelines-Questionable_Tags_or_Tags_to_Avoid">
+		<title>Questionable Tags, or Tags to Avoid</title>
+		 <para>
+			This section is currently designed to list tags that have been used incorrectly, or that provide no real benefit. Mostly all they do is increase maintenance and overhead.
+		</para>
+		 <variablelist>
+			<varlistentry>
+				<term>markup</term>
+				 <listitem>
+					<para>
+						See <ulink url="http://www.docbook.org/tdg/en/html/markup.html"><citetitle>The DocBook Guide</citetitle></ulink> for a definition and description of how to use this tag.
+					</para>
+					 <para>
+						This tag has been used in some cases to mark up various elements related to methods and their attributes. For this use case, you should investigate the method* tags.
+					</para>
 
 				</listitem>
 
