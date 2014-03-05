@@ -74,9 +74,6 @@
 			</para>
 
 		</formalpara>
-		 <para>
-			If no tag or solution presents itself, ask in #donuts on IRC, or raise a question in the <ulink url="https://mojo.redhat.com/groups/red-hat-writers-guild/projects/docbook-xml-tag-usage-guide">DocBook XML Tag Usage Guide</ulink> project.
-		</para>
 		 <formalpara id="form-Policy-Red_Hat_DocBook_XML_Usage_Guide-Documenting_Command_Options-Marking_up_Command_Options_in_Examples">
 			<title>Marking up Command Options in Examples</title>
 			 <para>

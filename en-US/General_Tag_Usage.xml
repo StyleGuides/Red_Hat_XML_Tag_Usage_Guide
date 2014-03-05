@@ -6,15 +6,15 @@
 <chapter id="chap-Policy-Red_Hat_DocBook_XML_Usage_Guide-General_Tag_Usage_Guidelines">
 	<title>General Tag Usage Guidelines</title>
 	 <para>
-		This is the egg of the book, and for now everything is in one chapter. That is bound to change, but we have to start somewhere. The place to really start is <ulink url="www.docbook.org/tdg/en/html/docbook.html" />
+		This is the egg of the book, and for now everything is in one chapter. That is bound to change, but we have to start somewhere. The place to really start is <ulink url="www.docbook.org/tdg/en/html/docbook.html" /> Another useful discussion site is <ulink url="http://www.dpawson.co.uk/docbook/markup.html" /> although it is somewhat dated, and not all of the link targets are accessible.
 	</para>
 	 <section id="sect-Policy-Red_Hat_DocBook_XML_Usage_Guide-General_Tag_Usage_Guidelines-Abbreviations_Acronyms_and_Initialisms">
 		<title>Abbreviations, Acronyms, and Initialisms</title>
 		 <para>
-			The Cloud documentation team has adopted the following practice for marking up abbreviations, acronyms, and initialisms. Hopefully other teams will adopt a similar practice in an effort to increase consistency across the documentation suite.
+			The Red&nbsp;Hat Cloud documentation team has adopted the following practice for marking up abbreviations, acronyms, and initialisms.
 		</para>
 		 <para>
-			<citetitle>The IBM Style Guide</citetitle> provides guidelines for DITA tags for highlighting (see p.276). This is not intended or expected to be a comprehensive guide for how to tag various elements, but lacking any better reference, the Cloud documentation team has adopted the recommendation to not tag abbreviations, acronyms, and initialisms.
+			<citetitle>The IBM Style Guide</citetitle> provides guidelines for DITA tags for highlighting (see p. 276). This is not intended or expected to be a comprehensive guide for how to tag various elements, but lacking any better reference, the Cloud documentation team has adopted the recommendation to not tag abbreviations, acronyms, and initialisms.
 		</para>
 		 <note>
 			<para>
@@ -32,7 +32,7 @@
 			<itemizedlist>
 				<listitem>
 					<para>
-						The Middleware Business Unit (BU) uses &lt;code&gt; tags for simplicity's sake, despite their inaccuracy. In a generic sense this is probably fine.
+						The Middleware Business Unit uses &lt;code&gt; tags for simplicity's sake, despite their inaccuracy. In a generic sense this is probably fine.
 					</para>
 
 				</listitem>
@@ -113,13 +113,10 @@
 
 					</para>
 					 <para>
-						The decision not to use &lt;quote&gt; tags whenever double quotation marks are required in Red&nbsp;Hat documentation was reached after a lengthy discussion<footnote> <para>
-							<ulink url="https://mojo.redhat.com/thread/8046" />
-						</para>
-						 </footnote> involving both writers and translators. No significant justification for their use was provided, and several good reasons not to use them were offered.
+						The decision not to use &lt;quote&gt; tags whenever double quotation marks are required in Red&nbsp;Hat documentation was reached after a lengthy discussion involving both writers and translators. No significant justification for their use was provided, and several good reasons not to use them were offered.
 					</para>
 					 <para>
-						As a result of this discussion, the current recommendation is to use the standard quotation mark key on your keyboard whenever single or double quotation marks are required in Red&nbsp;Hat documentation. If you are unsure how to use these marks, or which ones to use when, consult our standard references, ask in #donuts on IRC, or send email to <email>ecs-standards-list@redhat.com</email>.
+						As a result of this discussion, the current recommendation is to use the standard quotation mark key on your keyboard whenever single or double quotation marks are required in Red&nbsp;Hat documentation.
 					</para>
 					 <note>
 						<para>

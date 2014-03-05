@@ -9,7 +9,7 @@
 		<revhistory>
 			<revision>
 				<revnumber>0.0-3</revnumber>
-				 <date>Wed Feb 26 2014</date>
+				 <date>Thu Mar 05 2014</date>
 				 <author>
 					<firstname>David</firstname>
 					 <surname>O'Brien</surname>
@@ -18,7 +18,10 @@
 				</author>
 				 <revdescription>
 					<simplelist>
-						<member>Added draft section on how to use markup tags.</member>
+						<member>Remove internal links and references.</member>
+						 <member>Include extra references to markup discussions.</member>
+						 <member>Set brand to common.</member>
+						 <member>Added draft section on how to use markup tags.</member>
 						 <member>Revised section on how to tag abbreviations and acronyms.</member>
 
 					</simplelist>
