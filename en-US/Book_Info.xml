@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <!DOCTYPE bookinfo PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-<!ENTITY % BOOK_ENTITIES SYSTEM "Red_Hat_DocBook_XML_Usage_Guide.ent">
+<!ENTITY % BOOK_ENTITIES SYSTEM "DocBook_Tag_Usage_Guide.ent">
 %BOOK_ENTITIES;
 ]>
-<bookinfo id="book-Policy-Red_Hat_DocBook_XML_Usage_Guide-Red_Hat_DocBook_XML_Usage_Guide">
-	<title>Red Hat DocBook XML Usage Guide</title>
-	 <subtitle>Recommended practices for using DocBook XML tags in Red&nbsp;Hat documentation.</subtitle>
-	 <productname>Policy</productname>
+<bookinfo id="book-product-DocBook_Tag_Usage_Guide-DocBook_Tag_Usage_Guide">
+	<title>DocBook Tag Usage Guide</title>
+	 <subtitle>Recommended practices for using DocBook XML tags in technical documentation.</subtitle>
+	 <productname>product</productname>
 	 <productnumber>0.1</productnumber>
 	 <edition>1</edition>
 	 <pubsnumber>0</pubsnumber>
 	 <abstract>
 		<para>
-			This book describes the recommended DocBook XML tags to use in Red&nbsp;Hat documentation. It is a work in progress, and especially in the early stages of development covers questions that have been raised about the correct or preferred tags to use. It is currently far from complete or definitive, and needs considerable help.
+			This book describes some recommended DocBook XML tags to use in technical documentation. It is a work in progress, currently far from complete or definitive, and needs considerable help.
 		</para>
 
 	</abstract>
