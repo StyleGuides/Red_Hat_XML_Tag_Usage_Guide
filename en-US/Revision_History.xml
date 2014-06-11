@@ -5,67 +5,9 @@
 ]>
 <appendix id="appe-product-DocBook_Tag_Usage_Guide-Revision_History">
 	<title>Revision History</title>
+        
 	 <simpara>
 		<revhistory>
-			<revision>
-				<revnumber>0.0-3</revnumber>
-				 <date>Thu Mar 05 2014</date>
-				 <author>
-					<firstname>David</firstname>
-					 <surname>O'Brien</surname>
-					 <email>daobrien@redhat.com</email>
-				</author>
-				 <revdescription>
-					<simplelist>
-						<member>Remove internal links and references.</member>
-						 <member>Include extra references to markup discussions.</member>
-						 <member>Set brand to common.</member>
-						 <member>Added draft section on how to use markup tags.</member>
-						 <member>Revised section on how to tag abbreviations and acronyms.</member>
-
-					</simplelist>
-
-				</revdescription>
-
-			</revision>
-			 <revision>
-				<revnumber>0.0-2</revnumber>
-				 <date>Sun Jan 19 2014</date>
-				 <author>
-					<firstname>David</firstname>
-					 <surname>O'Brien</surname>
-					 <email>daobrien@redhat.com</email>
-				</author>
-				 <revdescription>
-					<simplelist>
-						<member>Changed to internal brand.</member>
-						 <member>Revised book title.</member>
-						 <member>Adding examples for use of &lt;command&gt; and &lt;option&gt; tags.</member>
-						 <member>BZ 1050778 Add entry for usage of &lt;quote&gt; tags.</member>
-
-					</simplelist>
-
-				</revdescription>
-
-			</revision>
-			 <revision>
-				<revnumber>0.0-1</revnumber>
-				 <date>Thu Nov 21 2013</date>
-				 <author>
-					<firstname>David</firstname>
-					 <surname>O'Brien</surname>
-					 <email>daobrien@redhat.com</email>
-				</author>
-				 <revdescription>
-					<simplelist>
-						<member>Updated section on abbreviations, acronyms, and initialisms.</member>
-						 <member>BZ 974880 Document how to tag GUI menus and submenus.</member>
-
-					</simplelist>
-
-				</revdescription>
-
-			</revision>
 			 <revision>
 				<revnumber>0.0-0</revnumber>
 				 <date>Fri Aug 23 2013</date>
@@ -76,7 +18,7 @@
 				</author>
 				 <revdescription>
 					<simplelist>
-						<member>Add early entries about applications and packages.</member>
+						<member>Refer to the git commit history for all further updates.</member>
 						 <member>Initial creation by publican.</member>
 
 					</simplelist>
