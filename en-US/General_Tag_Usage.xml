@@ -6,8 +6,9 @@
 <chapter id="chap-product-DocBook_Tag_Usage_Guide-General_Tag_Usage_Guidelines">
 	<title>General Tag Usage Guidelines</title>
 	 <para>
-		This is the egg of the book, and for now everything is in one chapter. That is bound to change, but we have to start somewhere. The place to really start is <ulink url="www.docbook.org/tdg/en/html/docbook.html" /> Another useful discussion site is <ulink url="http://www.dpawson.co.uk/docbook/markup.html" /> although it is somewhat dated, and not all of the link targets are accessible.
+		This is the egg of a book, and for now everything is in one chapter. That is bound to change, but we have to start somewhere. The place to really start is <ulink url="www.docbook.org/tdg/en/html/docbook.html" /> Another useful discussion site is <ulink url="http://www.dpawson.co.uk/docbook/markup.html" /> although it is somewhat dated, and not all of the link targets are accessible.
 	</para>
+                  
 	 <section id="sect-product-DocBook_Tag_Usage_Guide-General_Tag_Usage_Guidelines-Abbreviations_Acronyms_and_Initialisms">
 		<title>Abbreviations, Acronyms, and Initialisms</title>
 		 <para>
@@ -18,7 +19,7 @@
 		</para>
 		 <note>
 			<para>
-				For a discussion about how to use abbreviations, acronyms, and initialisms correctly, see <citetitle>The Red&nbsp;Hat Writing&nbsp;Style&nbsp;Guide</citetitle> at <ulink url="https://url.corp.redhat.com/RHStyleGuide" />
+				For a discussion about how to use abbreviations, acronyms, and initialisms correctly, see <citetitle>The Writing&nbsp;Style&nbsp;Guide</citetitle> at <ulink url="http://obriend.fedorapeople.org/WritingStyleGuide/html-single/" />
 			</para>
 
 		</note>
@@ -32,7 +33,7 @@
 			<itemizedlist>
 				<listitem>
 					<para>
-						The Middleware Business Unit uses &lt;code&gt; tags for simplicity's sake, despite their inaccuracy. In a generic sense this is probably fine.
+						Some groups within Red&nbsp;Hat have adopted the use of &lt;code&gt; tags for simplicity's sake, despite their inaccuracy. In a generic sense this is probably fine.
 					</para>
 
 				</listitem>
