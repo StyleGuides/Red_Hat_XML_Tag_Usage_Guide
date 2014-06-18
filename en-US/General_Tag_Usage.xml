@@ -3,13 +3,12 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "DocBook_Tag_Usage_Guide.ent">
 %BOOK_ENTITIES;
 ]>
-<chapter id="chap-product-DocBook_Tag_Usage_Guide-General_Tag_Usage_Guidelines">
+<chapter id="chap-Tips_for_Writers-DocBook_Tag_Usage_Guide-General_Tag_Usage_Guidelines">
 	<title>General Tag Usage Guidelines</title>
 	 <para>
 		This is the egg of a book, and for now everything is in one chapter. That is bound to change, but we have to start somewhere. The place to really start is <ulink url="www.docbook.org/tdg/en/html/docbook.html" /> Another useful discussion site is <ulink url="http://www.dpawson.co.uk/docbook/markup.html" /> although it is somewhat dated, and not all of the link targets are accessible.
 	</para>
-                  
-	 <section id="sect-product-DocBook_Tag_Usage_Guide-General_Tag_Usage_Guidelines-Abbreviations_Acronyms_and_Initialisms">
+	 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-General_Tag_Usage_Guidelines-Abbreviations_Acronyms_and_Initialisms">
 		<title>Abbreviations, Acronyms, and Initialisms</title>
 		 <para>
 			The Red&nbsp;Hat Cloud documentation team has adopted the following practice for marking up abbreviations, acronyms, and initialisms.
@@ -26,7 +25,7 @@
 
 	</section>
 	
-	 <section id="sect-product-DocBook_Tag_Usage_Guide-General_Tag_Usage_Guidelines-API_Calls">
+	 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-General_Tag_Usage_Guidelines-API_Calls">
 		<title>API Calls</title>
 		 <para>
 			Only minimal discussion has occurred with respect to tagging API calls. The results so far are as follows: 
@@ -50,46 +49,96 @@
 
 	</section>
 	
-	 <section id="sect-product-DocBook_Tag_Usage_Guide-General_Tag_Usage_Guidelines-Applications">
-		<title>Applications</title>
+	 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-General_Tag_Usage_Guidelines-Products_Projects_and_Applications">
+		<title>Products, Projects, and Applications</title>
 		 <para>
-			One of the problem areas here is identifying when something is actually an application, a command, a service, or perhaps an "alias"; for example, tools, utilities, and other terms are often used, but there is no clear definition of what these are when it comes to applying DocBook tags.
+			One of the problem areas here is identifying when something is actually an application, a command, a service, or perhaps an "alias"; for example, tools, utilities, and other terms are often used, but there is no clear definition of what these are when it comes to applying DocBook tags. Products are less of an issue, because suitable tags exist, but again, it's not always clear when a product is a product and when it's something else. Projects, to be quite honest, are a pain in the neck. It might depend on your definition of product and project, but for the moment we're assuming that a product is something you either sell, or sell support for, while a project is not. An example of a product is <productname>Red&nbsp;Hat Satellite</productname>. Examples of projects include Katello, Foreman, and Pulp, all of which are pulled together with other works to produce <productname>Red&nbsp;Hat Satellite</productname>. The jury is still out.
 		</para>
-		 <para>
-			The following entries have been entered and discussed:
-		</para>
-		 <variablelist id="vari-product-DocBook_Tag_Usage_Guide-Applications-Applications_Packages_and_Daemons">
-			<title>Applications, Packages, and Daemons</title>
-			 <varlistentry id="varl-product-DocBook_Tag_Usage_Guide-Applications_Packages_and_Daemons-PostgreSQL">
-				<term>PostgreSQL</term>
-				 <listitem>
-					<para>
-						PostgreSQL server and RHEV-M server: In these cases, "PostgreSQL" and "RHEV-M" are both applications and should be tagged as such.
-					</para>
+		 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-Products_Projects_and_Applications-Products_and_Projects">
+			<title>Products and Projects</title>
+			 <para>
+				DocBook very kindly offers the following tags related to products: 
+				<itemizedlist>
+					<listitem>
+						<para>
+							<ulink url="http://www.docbook.org/tdg/en/html/productname.html">productname</ulink> - The formal name of a product
+						</para>
+					</listitem>
+					 <listitem>
+						<para>
+							<ulink url="http://www.docbook.org/tdg/en/html/productnumber.html">productnumber</ulink> - A number assigned to a product
+						</para>
+					</listitem>
+				</itemizedlist>
 
-				</listitem>
+			</para>
+			 <para>
+				Red&nbsp;Hat doesn't use &lt;productnumber&gt; tags, and &lt;productname&gt; tags are still coming into their own. The following bear consideration: 
+				<itemizedlist>
+					<listitem>
+						<para>
+							Purpose: Why are you tagging product names in the first place? To be semantically correct? This is a huge can of worms; tread carefully. If it's because your style sheets cause text tagged with &lt;productname&gt; tags to render differently, see the next point.
+						</para>
+					</listitem>
+					 <listitem>
+						<para>
+							Overhead and ROI: Depending on what you are writing, and for whom, you might end up writing your product name quite a lot, or hardly at all. Bear this in mind before you decide to use &lt;productname&gt; tags, or you might end up with a lot of tags, which can also lead to opportunity for error, and extended troubleshooting if your XML is invalid.
+						</para>
+					</listitem>
+					 <listitem>
+						<para>
+							Abbreviations: Do you always write product names out in full, or do you sometimes abbreviate or truncate them for the sake of readability? This is basically and extension of the previous point. If you decide to tag every instance of your product name, long or short, you might end up with lots of tags.
+						</para>
+					</listitem>
+					 <listitem>
+						<para>
+							Localization: Whether your team or company localizes product names or not, this is a good way to identify them. You should also have an accepted list of translations for each product, but that's a different topic.
+						</para>
+					</listitem>
+				</itemizedlist>
+			</para>
 
-			</varlistentry>
-			 <varlistentry id="varl-product-DocBook_Tag_Usage_Guide-Applications_Packages_and_Daemons-postgresql">
-				<term>postgresql</term>
-				 <listitem>
-					<para>
-						postgresql<superscript>1</superscript>: Refers to the package that you install on the computer. In this case, tag it with a &lt;package&gt; tag.
-					</para>
-					 <para>
-						postgresql<superscript>2</superscript>: Refers to the daemon (or service) that the package provides. In this case, tag it with a &lt;systemitem class="daemon"&gt; tag.
-					</para>
+		</section>
+		
+		 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-Products_Projects_and_Applications-Applications">
+			<title>Applications</title>
+			 <para>
+				The following entries have been entered and discussed:
+			</para>
+			 <variablelist id="vari-Tips_for_Writers-DocBook_Tag_Usage_Guide-Applications-Applications_Packages_and_Daemons">
+				<title>Applications, Packages, and Daemons</title>
+				 <varlistentry id="varl-Tips_for_Writers-DocBook_Tag_Usage_Guide-Applications_Packages_and_Daemons-PostgreSQL">
+					<term>PostgreSQL</term>
+					 <listitem>
+						<para>
+							PostgreSQL server and RHEV-M server: In these cases, "PostgreSQL" and "RHEV-M" are both applications and should be tagged as such.
+						</para>
 
-				</listitem>
+					</listitem>
 
-			</varlistentry>
+				</varlistentry>
+				 <varlistentry id="varl-Tips_for_Writers-DocBook_Tag_Usage_Guide-Applications_Packages_and_Daemons-postgresql">
+					<term>postgresql</term>
+					 <listitem>
+						<para>
+							postgresql<superscript>1</superscript>: Refers to the package that you install on the computer. In this case, tag it with a &lt;package&gt; tag.
+						</para>
+						 <para>
+							postgresql<superscript>2</superscript>: Refers to the daemon (or service) that the package provides. In this case, tag it with a &lt;systemitem class="daemon"&gt; tag.
+						</para>
 
-		</variablelist>
+					</listitem>
+
+				</varlistentry>
+
+			</variablelist>
+		</section>
+		
 
 	</section>
 	
 	 <xi:include href="Commands_Options_Arguments.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	 <section id="sect-product-DocBook_Tag_Usage_Guide-General_Tag_Usage_Guidelines-Punctuation">
+	 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-General_Tag_Usage_Guidelines-Punctuation">
 		<title>Punctuation</title>
 		 <para>
 			This section describes the preferred methods for tagging punctuation marks should that prove necessary. Ordinarily this is not required, but in some cases, for example ellipses and greater than and less than symbols, using DocBook tags or entities may be required to ensure the integrity of the XML file.
@@ -101,7 +150,7 @@
 
 		</note>
 		 <variablelist>
-			<varlistentry id="varl-product-DocBook_Tag_Usage_Guide-Punctuation-Quotation_Marks_and_quote_Tags">
+			<varlistentry id="varl-Tips_for_Writers-DocBook_Tag_Usage_Guide-Punctuation-Quotation_Marks_and_quote_Tags">
 				<term>Quotation Marks and &lt;quote&gt; Tags</term>
 				 <listitem>
 					<para>
@@ -134,23 +183,23 @@
 
 	</section>
 	
-	 <section id="sect-product-DocBook_Tag_Usage_Guide-General_Tag_Usage_Guidelines-User_Interface_Objects">
+	 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-General_Tag_Usage_Guidelines-User_Interface_Objects">
 		<title>User Interface Objects</title>
 		 <para>
 			This section describes the preferred methods for tagging various user interface objects.
 		</para>
-		 <variablelist id="vari-product-DocBook_Tag_Usage_Guide-User_Interface_Objects-Menus_Submenus_and_Menu_Items">
+		 <variablelist id="vari-Tips_for_Writers-DocBook_Tag_Usage_Guide-User_Interface_Objects-Menus_Submenus_and_Menu_Items">
 			<title>Menus, Submenus, and Menu Items</title>
-			 <varlistentry id="varl-product-DocBook_Tag_Usage_Guide-Menus_Submenus_and_Menu_Items-GUI_Menus">
+			 <varlistentry id="varl-Tips_for_Writers-DocBook_Tag_Usage_Guide-Menus_Submenus_and_Menu_Items-GUI_Menus">
 				<term>GUI Menus</term>
 				 <listitem>
 					<para>
-						Use the following syntax and tags when documenting GUI menus, submenus, and menu items. Note that there are no spaces or other punctuation between tags or elements. See <xref linkend="exam-product-DocBook_Tag_Usage_Guide-GUI_Menus-Example_Output_Using_Prescribed_GUI_Tags" /> for example output.
+						Use the following syntax and tags when documenting GUI menus, submenus, and menu items. Note that there are no spaces or other punctuation between tags or elements. See <xref linkend="exam-Tips_for_Writers-DocBook_Tag_Usage_Guide-GUI_Menus-Example_Output_Using_Prescribed_GUI_Tags" /> for example output.
 					</para>
 					 <para>
 						&lt;menuchoice&gt;&lt;guimenu&gt;System&lt;/guimenu&gt;&lt;guisubmenu&gt;Preferences&lt;/guisubmenu&gt;&lt;guimenuitem&gt;Mouse&lt;/guimenuitem&gt;&lt;/menuchoice&gt;
 					</para>
-					 <example id="exam-product-DocBook_Tag_Usage_Guide-GUI_Menus-Example_Output_Using_Prescribed_GUI_Tags">
+					 <example id="exam-Tips_for_Writers-DocBook_Tag_Usage_Guide-GUI_Menus-Example_Output_Using_Prescribed_GUI_Tags">
 						<title>Example Output Using Prescribed GUI Tags</title>
 						 <para>
 							<menuchoice><guimenu>System</guimenu><guisubmenu>Preferences</guisubmenu><guimenuitem>Mouse</guimenuitem></menuchoice>
@@ -166,13 +215,13 @@
 
 	</section>
 	
-	 <section id="sect-product-DocBook_Tag_Usage_Guide-General_Tag_Usage_Guidelines-Questionable_Tags_or_Tags_to_Avoid">
+	 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-General_Tag_Usage_Guidelines-Questionable_Tags_or_Tags_to_Avoid">
 		<title>Questionable Tags, or Tags to Avoid</title>
 		 <para>
 			This section is currently designed to list tags that have been used incorrectly, or that provide no real benefit. Mostly all they do is increase maintenance and overhead.
 		</para>
 		 <variablelist>
-			<varlistentry id="varl-product-DocBook_Tag_Usage_Guide-Questionable_Tags_or_Tags_to_Avoid-markup">
+			<varlistentry id="varl-Tips_for_Writers-DocBook_Tag_Usage_Guide-Questionable_Tags_or_Tags_to_Avoid-markup">
 				<term>markup</term>
 				 <listitem>
 					<para>

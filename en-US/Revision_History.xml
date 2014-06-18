@@ -3,12 +3,11 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "DocBook_Tag_Usage_Guide.ent">
 %BOOK_ENTITIES;
 ]>
-<appendix id="appe-product-DocBook_Tag_Usage_Guide-Revision_History">
+<appendix id="appe-Tips_for_Writers-DocBook_Tag_Usage_Guide-Revision_History">
 	<title>Revision History</title>
-        
 	 <simpara>
 		<revhistory>
-			 <revision>
+			<revision>
 				<revnumber>0.0-0</revnumber>
 				 <date>Fri Aug 23 2013</date>
 				 <author>

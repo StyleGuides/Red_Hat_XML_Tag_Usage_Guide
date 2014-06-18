@@ -3,7 +3,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "DocBook_Tag_Usage_Guide.ent">
 %BOOK_ENTITIES;
 ]>
-<bookinfo id="book-product-DocBook_Tag_Usage_Guide-DocBook_Tag_Usage_Guide">
+<bookinfo id="book-Tips_for_Writers-DocBook_Tag_Usage_Guide-DocBook_Tag_Usage_Guide">
 	<title>DocBook Tag Usage Guide</title>
 	 <subtitle>Recommended practices for using DocBook XML tags in technical documentation.</subtitle>
 	 <productname>Tips for Writers</productname>
@@ -25,7 +25,6 @@
 		</inlinemediaobject>
 
 	</corpauthor>
-<!-- 	 <xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" /> -->
-<!-- 	 <xi:include href="Author_Group.xml" xmlns:xi="http://www.w3.org/2001/XInclude" /> -->
+	<!--  	 <xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />  --><!--  	 <xi:include href="Author_Group.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />  -->
 </bookinfo>
 
