@@ -22,9 +22,6 @@
 		 <para>
 			In keeping with the philosophy of "never say never," commands almost always appear inside &lt;command&gt; tags. Even when used in &lt;screen&gt; or similar tags, commands need to be marked up to differentiate them from other text that may appear in a displayed block, for example, computer output. If they appear as part of body text, commands need to be differentiated from the surrounding text.
 		</para>
-		 <para>
-			The Cloud documentation team has adopted the following practice for marking up commands and command options.
-		</para>
 		 <example id="exam-Tips_for_Writers-DocBook_Tag_Usage_Guide-Documenting_Commands-Marking_up_Commands_in_Body_Text">
 			<title>Marking up Commands in Body Text</title>
 			 <para>

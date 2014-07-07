@@ -11,10 +11,7 @@
 	 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-General_Tag_Usage_Guidelines-Abbreviations_Acronyms_and_Initialisms">
 		<title>Abbreviations, Acronyms, and Initialisms</title>
 		 <para>
-			The Red&nbsp;Hat Cloud documentation team has adopted the following practice for marking up abbreviations, acronyms, and initialisms.
-		</para>
-		 <para>
-			<citetitle>The IBM Style Guide</citetitle> provides guidelines for DITA tags for highlighting (see p. 276). This is not intended or expected to be a comprehensive guide for how to tag various elements, but lacking any better reference, the Cloud documentation team has adopted the recommendation to not tag abbreviations, acronyms, and initialisms.
+			<citetitle>The IBM Style Guide</citetitle> provides guidelines for DITA tags for highlighting (see p. 276). This is not intended or expected to be a comprehensive guide for how to tag various elements, but lacking any better reference, the Red&nbsp;Hat Cloud documentation team has adopted the recommendation to not tag abbreviations, acronyms, and initialisms.
 		</para>
 		 <note>
 			<para>
@@ -52,7 +49,7 @@
 	 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-General_Tag_Usage_Guidelines-Products_Projects_and_Applications">
 		<title>Products, Projects, and Applications</title>
 		 <para>
-			One of the problem areas here is identifying when something is actually an application, a command, a service, or perhaps an "alias"; for example, tools, utilities, and other terms are often used, but there is no clear definition of what these are when it comes to applying DocBook tags. Products are less of an issue, because suitable tags exist, but again, it's not always clear when a product is a product and when it's something else. Projects, to be quite honest, are a pain in the neck. It might depend on your definition of product and project, but for the moment we're assuming that a product is something you either sell, or sell support for, while a project is not. An example of a product is <productname>Red&nbsp;Hat Satellite</productname>. Examples of projects include Katello, Foreman, and Pulp, all of which are pulled together with other works to produce <productname>Red&nbsp;Hat Satellite</productname>. The jury is still out.
+			One of the problem areas here is identifying when something is actually an application, a command, a service, or perhaps an "alias"; for example, tools, utilities, and other terms are often used, but there is no clear definition of what these are when it comes to applying DocBook tags. Products are less of an issue, because suitable tags exist, but after some discussion, we decided not to tag products at all. This was mainly because we found no real benefit in doing it, our style sheets applied no alternative treatment for this tag, and it was extra work to do it in the first place.
 		</para>
 		 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-Products_Projects_and_Applications-Products_and_Projects">
 			<title>Products and Projects</title>
@@ -63,39 +60,48 @@
 						<para>
 							<ulink url="http://www.docbook.org/tdg/en/html/productname.html">productname</ulink> - The formal name of a product
 						</para>
+
 					</listitem>
 					 <listitem>
 						<para>
 							<ulink url="http://www.docbook.org/tdg/en/html/productnumber.html">productnumber</ulink> - A number assigned to a product
 						</para>
+
 					</listitem>
+
 				</itemizedlist>
 
 			</para>
 			 <para>
-				Red&nbsp;Hat doesn't use &lt;productnumber&gt; tags, and &lt;productname&gt; tags are still coming into their own. The following bear consideration: 
+				Red&nbsp;Hat doesn't use either &lt;productnumber&gt; or &lt;productname&gt; tags at this point, mainly due to overhead and ROI (see below). The following bear consideration: 
 				<itemizedlist>
 					<listitem>
 						<para>
 							Purpose: Why are you tagging product names in the first place? To be semantically correct? This is a huge can of worms; tread carefully. If it's because your style sheets cause text tagged with &lt;productname&gt; tags to render differently, see the next point.
 						</para>
+
 					</listitem>
 					 <listitem>
 						<para>
 							Overhead and ROI: Depending on what you are writing, and for whom, you might end up writing your product name quite a lot, or hardly at all. Bear this in mind before you decide to use &lt;productname&gt; tags, or you might end up with a lot of tags, which can also lead to opportunity for error, and extended troubleshooting if your XML is invalid.
 						</para>
+
 					</listitem>
 					 <listitem>
 						<para>
-							Abbreviations: Do you always write product names out in full, or do you sometimes abbreviate or truncate them for the sake of readability? This is basically and extension of the previous point. If you decide to tag every instance of your product name, long or short, you might end up with lots of tags.
+							Abbreviations: Do you always write product names out in full, or do you sometimes abbreviate or truncate them for the sake of readability? This is basically an extension of the previous point. If you decide to tag every instance of your product name, long or short, you might end up with lots of tags.
 						</para>
+
 					</listitem>
 					 <listitem>
 						<para>
 							Localization: Whether your team or company localizes product names or not, this is a good way to identify them. You should also have an accepted list of translations for each product, but that's a different topic.
 						</para>
+
 					</listitem>
+
 				</itemizedlist>
+
 			</para>
 
 		</section>
@@ -132,6 +138,7 @@
 				</varlistentry>
 
 			</variablelist>
+
 		</section>
 		
 
