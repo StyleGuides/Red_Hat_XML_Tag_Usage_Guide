@@ -20,8 +20,17 @@
 			Commands generally appear in two main scenarios: inline, as part of a general discussion or description of the command; or in a displayed block, as part of an example or procedural step. The second scenario often includes several command options that apply to the specific example or task.
 		</para>
 		 <para>
-			In keeping with the philosophy of "never say never," commands almost always appear inside &lt;command&gt; tags. Even when used in &lt;screen&gt; or similar tags, commands need to be marked up to differentiate them from other text that may appear in a displayed block, for example, computer output. If they appear as part of body text, commands need to be differentiated from the surrounding text.
+			In keeping with the philosophy of "never say never," commands almost always appear inside &lt;command&gt; tags. When used in &lt;screen&gt; or similar tags, some parts of commands (but not commands themselves - see below) need to be marked up to differentiate them from other text that may appear in a displayed block, for example, computer output. If they appear as part of body text, commands need to be differentiated from the surrounding text.
 		</para>
+		 <para>
+			When documenting commands in displayed blocks, such as in examples, it is often necessary to continue commands over multiple lines. To highlight these commands, to facilitate copying and pasting examples, and so on, use backslashes to indicate line breaks. This is also the reason why we do not use &lt;command&gt; tags inside displayed blocks; &lt;command&gt; tags override the default behavior of displayed blocks, and forced line breaks are no longer respected.
+		</para>
+		 <formalpara id="form-Tips_for_Writers-DocBook_Tag_Usage_Guide-Documenting_Commands-Marking_up_Commands_in_Body_Text">
+			<title>Marking up Commands in Body Text</title>
+			 <para>
+				<xref linkend="exam-Tips_for_Writers-DocBook_Tag_Usage_Guide-Documenting_Commands-Marking_up_Commands_in_Body_Text" /> describes how to mark up commands in body text.
+			</para>
+		</formalpara>
 		 <example id="exam-Tips_for_Writers-DocBook_Tag_Usage_Guide-Documenting_Commands-Marking_up_Commands_in_Body_Text">
 			<title>Marking up Commands in Body Text</title>
 			 <para>
@@ -35,20 +44,51 @@
 			</para>
 
 		</example>
+		 <formalpara id="form-Tips_for_Writers-DocBook_Tag_Usage_Guide-Documenting_Commands-Marking_up_Commands_in_Examples">
+			<title>Marking up Commands in Examples</title>
+			 <para>
+				<xref linkend="exam-Tips_for_Writers-DocBook_Tag_Usage_Guide-Documenting_Commands-Marking_up_Commands_in_Examples" /> describes how to mark up commands in examples.
+			</para>
+		</formalpara>
 		 <example id="exam-Tips_for_Writers-DocBook_Tag_Usage_Guide-Documenting_Commands-Marking_up_Commands_in_Examples">
 			<title>Marking up Commands in Examples</title>
 			 <para>
 				Enter the following command to determine the status of the firewall:
 			</para>
 			 <para>
-				&lt;screen&gt;&lt;command&gt;# service iptables status&lt;/command&gt;&lt;/screen&gt;
+				&lt;screen&gt;# service iptables status&lt;/screen&gt;
 			</para>
 			 <para>
 				This is rendered as follows:
 			</para>
 			 <para>
 				Enter the following command to determine the status of the firewall: 
-<screen><command># service iptables status</command></screen>
+<screen># service iptables status</screen>
+
+			</para>
+
+		</example>
+		 <formalpara id="form-Tips_for_Writers-DocBook_Tag_Usage_Guide-Documenting_Commands-Marking_up_Long_Commands_in_Examples">
+			<title>Marking up Long Commands in Examples</title>
+			 <para>
+				<xref linkend="exam-Tips_for_Writers-DocBook_Tag_Usage_Guide-Documenting_Commands-Marking_up_Long_Commands_in_Examples" /> describes how to mark up long or multi-line commands in examples.
+			</para>
+		</formalpara>
+		 <example id="exam-Tips_for_Writers-DocBook_Tag_Usage_Guide-Documenting_Commands-Marking_up_Long_Commands_in_Examples">
+			<title>Marking up Long Commands in Examples</title>
+			 <para>
+				Enter the following command to configure the wobbly widget:
+			</para>
+			 <para>
+				&lt;screen&gt;# wobbly-config --color=true --SSL=true --home-dir=&lt;replaceable&gt;/path/to/home&lt;/replaceable&gt; \ --allow-root=false --allow-remote=true --auto-update=true&lt;/screen&gt;
+			</para>
+			 <para>
+				This is rendered as follows:
+			</para>
+			 <para>
+				Enter the following command to configure the wobbly widget: 
+<screen># wobbly-config --color=true --SSL=true --home-dir=<replaceable>/path/to/home</replaceable> \
+--allow-root=false --allow-remote=true --auto-update=true</screen>
 
 			</para>
 
