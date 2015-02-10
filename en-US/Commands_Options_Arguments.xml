@@ -80,14 +80,14 @@
 				Enter the following command to configure the wobbly widget:
 			</para>
 			 <para>
-				&lt;screen&gt;# wobbly-config --color=true --SSL=true --home-dir=&lt;replaceable&gt;/path/to/home&lt;/replaceable&gt; \ --allow-root=false --allow-remote=true --auto-update=true&lt;/screen&gt;
+				&lt;screen&gt;# wobbly-config --color=true --SSL=true --home-dir=&lt;replaceable&gt;home&amp;nbsp;directory&lt;/replaceable&gt; \ --allow-root=false --allow-remote=true --auto-update=true&lt;/screen&gt;
 			</para>
 			 <para>
 				This is rendered as follows:
 			</para>
 			 <para>
 				Enter the following command to configure the wobbly widget: 
-<screen># wobbly-config --color=true --SSL=true --home-dir=<replaceable>/path/to/home</replaceable> \
+<screen># wobbly-config --color=true --SSL=true --home-dir=<replaceable>home&nbsp;directory</replaceable> \
 --allow-root=false --allow-remote=true --auto-update=true</screen>
 
 			</para>
@@ -121,13 +121,13 @@
 		 <example id="exam-Tips_for_Writers-DocBook_Tag_Usage_Guide-Documenting_Command_Options-Marking_up_Command_Options_in_Examples">
 			<title>Marking up Command Options in Examples</title>
 			 <para>
-				&lt;screen&gt;&lt;command&gt;$ adduser --user &lt;replaceable&gt;user&amp;nbsp;name&lt;/replaceable&gt; --homedir &lt;replaceable&gt;home&amp;nbsp;directory&lt;/replaceable&gt;&lt;/command&gt;&lt;/screen&gt;
+				&lt;screen&gt;$ adduser --user &lt;replaceable&gt;username&lt;/replaceable&gt; --homedir &lt;replaceable&gt;home&amp;nbsp;directory&lt;/replaceable&gt;&lt;/screen&gt;
 			</para>
 			 <para>
 				This is rendered as follows:
 			</para>
 			 
-<screen><command>$ adduser --user <replaceable>user&nbsp;name</replaceable> --homedir <replaceable>home&nbsp;directory</replaceable></command></screen>
+<screen>$ adduser --user <replaceable>user&nbsp;name</replaceable> --homedir <replaceable>home&nbsp;directory</replaceable></screen>
 
 		</example>
 
