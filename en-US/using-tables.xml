@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "DocBook_Tag_Usage_Guide.ent">
+%BOOK_ENTITIES;
+]>
+<chapter id="chap-Tips_for_Writers-DocBook_Tag_Usage_Guide-Using_Tables">
+	<title>Using Tables</title>
+	 <para>
+		First things first: this section is not designed to tell you when to use a table or not. That's up to you, common sense, and your department's guidelines. What it does do is provide some templates to create simple tables, some options that you can use, and some pointers to more advanced material.
+	</para>
+	 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-Using_Tables-External_References">
+		<title>External References</title>
+		 <para>
+			As always, references already exist that you can use to help design your tables the way you like: 
+			<itemizedlist>
+				<listitem>
+					<para>
+						<ulink url="http://www.docbook.org/tdg/en/html/table.html">Formal DocBook table</ulink>
+					</para>
+
+				</listitem>
+				 <listitem>
+					<para>
+						<ulink url="http://www.docbook.org/tdg/en/html/informaltable.html">Informal DocBook table</ulink>
+					</para>
+
+				</listitem>
+
+			</itemizedlist>
+
+		</para>
+
+	</section>
+	 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-Using_Tables-Table_Templates">
+		<title>Table Templates</title>
+		 <para>
+			The following example is a simple table with a header, and no special attributes or configuration applied.
+		</para>
+		 
+<programlisting><![CDATA[
+<table><title>Required Network Ports</title>
+    <tgroup cols="3">
+
+        <thead>
+                <row>
+                        <entry>
+                                Port
+                        </entry>
+                            <entry>
+                                Protocol
+                        </entry>
+                            <entry>
+                                Service
+                        </entry>
+                </row>
+
+        </thead>
+        <tbody>
+            <row>
+                    <entry>
+                            443
+                    </entry>
+                        <entry>
+                            tcp
+                    </entry>
+                        <entry>
+                            HTTPS
+                    </entry>
+
+            </row>
+                <row>
+                    <entry>
+                            5671
+                    </entry>
+                        <entry>
+                            tcp
+                    </entry>
+                        <entry>
+                            SSL
+                    </entry>
+
+            </row>
+        </tbody>
+    </tgroup>
+</table>]]></programlisting>
+		 <table id="tabl-Tips_for_Writers-DocBook_Tag_Usage_Guide-Table_Templates-Required_Network_Ports">
+			<title>Required Network Ports</title>
+			 <tgroup cols="3">
+				<thead>
+					<row>
+						<entry> Port </entry>
+						 <entry> Protocol </entry>
+						 <entry> Service </entry>
+
+					</row>
+
+				</thead>
+				 <tbody>
+					<row>
+						<entry> 443 </entry>
+						 <entry> tcp </entry>
+						 <entry> HTTPS </entry>
+
+					</row>
+					 <row>
+						<entry> 5671 </entry>
+						 <entry> tcp </entry>
+						 <entry> SSL </entry>
+
+					</row>
+
+				</tbody>
+
+			</tgroup>
+
+		</table>
+		 <para>
+			Now we can introduce a design mechanism, "colwidth", to manipulate our columns to suit our data. This is the same table, but with a minor change to the "tgroup" section:
+		</para>
+		 
+<programlisting><![CDATA[
+<table><title>Required Network Ports</title>
+    <tgroup cols="3">
+        <colspec colwidth="1*"></colspec>
+        <colspec colwidth="1*"></colspec>
+        <colspec colwidth="6*"></colspec>
+        ]]></programlisting>
+		 <table id="tabl-Tips_for_Writers-DocBook_Tag_Usage_Guide-Table_Templates-Required_Network_Ports_Take_2">
+			<title>Required Network Ports Take #2</title>
+			 <tgroup cols="3">
+				<colspec colwidth="1*"></colspec>
+				 <colspec colwidth="1*"></colspec>
+				 <colspec colwidth="6*"></colspec>
+				 <thead>
+					<row>
+						<entry> Port </entry>
+						 <entry> Protocol </entry>
+						 <entry> Service </entry>
+
+					</row>
+
+				</thead>
+				 <tbody>
+					<row>
+						<entry> 443 </entry>
+						 <entry> tcp </entry>
+						 <entry> HTTPS: Put a long description here and line wrapping shouldn't be an issue. </entry>
+
+					</row>
+					 <row>
+						<entry> 5671 </entry>
+						 <entry> tcp </entry>
+						 <entry> SSL </entry>
+
+					</row>
+
+				</tbody>
+
+			</tgroup>
+
+		</table>
+
+	</section>
+
+</chapter>
+
