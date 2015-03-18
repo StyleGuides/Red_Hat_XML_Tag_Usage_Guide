@@ -30,6 +30,7 @@
 			 <para>
 				<xref linkend="exam-Tips_for_Writers-DocBook_Tag_Usage_Guide-Documenting_Commands-Marking_up_Commands_in_Body_Text" /> describes how to mark up commands in body text.
 			</para>
+
 		</formalpara>
 		 <example id="exam-Tips_for_Writers-DocBook_Tag_Usage_Guide-Documenting_Commands-Marking_up_Commands_in_Body_Text">
 			<title>Marking up Commands in Body Text</title>
@@ -49,6 +50,7 @@
 			 <para>
 				<xref linkend="exam-Tips_for_Writers-DocBook_Tag_Usage_Guide-Documenting_Commands-Marking_up_Commands_in_Examples" /> describes how to mark up commands in examples.
 			</para>
+
 		</formalpara>
 		 <example id="exam-Tips_for_Writers-DocBook_Tag_Usage_Guide-Documenting_Commands-Marking_up_Commands_in_Examples">
 			<title>Marking up Commands in Examples</title>
@@ -73,6 +75,7 @@
 			 <para>
 				<xref linkend="exam-Tips_for_Writers-DocBook_Tag_Usage_Guide-Documenting_Commands-Marking_up_Long_Commands_in_Examples" /> describes how to mark up long or multi-line commands in examples.
 			</para>
+
 		</formalpara>
 		 <example id="exam-Tips_for_Writers-DocBook_Tag_Usage_Guide-Documenting_Commands-Marking_up_Long_Commands_in_Examples">
 			<title>Marking up Long Commands in Examples</title>
@@ -101,7 +104,6 @@
 		</note>
 
 	</section>
-	
 	 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-Commands_Options_and_Arguments-Documenting_Command_Options">
 		<title>Documenting Command Options</title>
 		 <formalpara id="form-Tips_for_Writers-DocBook_Tag_Usage_Guide-Documenting_Command_Options-Marking_up_Command_Options_in_Body_Text">
@@ -132,8 +134,6 @@
 		</example>
 
 	</section>
-	
 
 </section>
-
 

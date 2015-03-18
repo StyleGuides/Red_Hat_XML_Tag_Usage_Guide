@@ -6,7 +6,7 @@
 <chapter id="chap-Tips_for_Writers-DocBook_Tag_Usage_Guide-General_Tag_Usage_Guidelines">
 	<title>General Tag Usage Guidelines</title>
 	 <para>
-		This is the egg of a book, and for now everything is in one chapter. That is bound to change, but we have to start somewhere. The place to really start is <ulink url="www.docbook.org/tdg/en/html/docbook.html" /> Another useful discussion site is <ulink url="http://www.dpawson.co.uk/docbook/markup.html" /> although it is somewhat dated, and not all of the link targets are accessible.
+		We have to start somewhere. The place to really start is <ulink url="www.docbook.org/tdg/en/html/docbook.html" /> Another useful discussion site is <ulink url="http://www.dpawson.co.uk/docbook/markup.html" /> although it is somewhat dated, and not all of the link targets are accessible.
 	</para>
 	 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-General_Tag_Usage_Guidelines-Abbreviations_Acronyms_and_Initialisms">
 		<title>Abbreviations, Acronyms, and Initialisms</title>
@@ -21,11 +21,10 @@
 		</note>
 
 	</section>
-
 	 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-General_Tag_Usage_Guidelines-API_Calls">
 		<title>API Calls</title>
 		 <para>
-			Only minimal discussion has occurred with respect to tagging API calls. The results so far are as follows:
+			Only minimal discussion has occurred with respect to tagging API calls. The results so far are as follows: 
 			<itemizedlist>
 				<listitem>
 					<para>
@@ -45,7 +44,6 @@
 		</para>
 
 	</section>
-
 	 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-General_Tag_Usage_Guidelines-Products_Projects_and_Applications">
 		<title>Products, Projects, and Applications</title>
 		 <para>
@@ -54,7 +52,7 @@
 		 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-Products_Projects_and_Applications-Products_and_Projects">
 			<title>Products and Projects</title>
 			 <para>
-				DocBook very kindly offers the following tags related to products:
+				DocBook very kindly offers the following tags related to products: 
 				<itemizedlist>
 					<listitem>
 						<para>
@@ -73,7 +71,7 @@
 
 			</para>
 			 <para>
-				Red&nbsp;Hat doesn't use either &lt;productnumber&gt; or &lt;productname&gt; tags at this point, except in the main book file. This is mainly due to overhead and ROI (see below). The following bear consideration:
+				Red&nbsp;Hat doesn't use either &lt;productnumber&gt; or &lt;productname&gt; tags at this point, except in the main book file. This is mainly due to overhead and ROI (see below). The following bear consideration: 
 				<itemizedlist>
 					<listitem>
 						<para>
@@ -105,7 +103,6 @@
 			</para>
 
 		</section>
-
 		 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-Products_Projects_and_Applications-Applications">
 			<title>Applications</title>
 			 <para>
@@ -141,9 +138,7 @@
 
 		</section>
 
-
 	</section>
-
 	 <xi:include href="Commands_Options_Arguments.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 	 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-General_Tag_Usage_Guidelines-Punctuation">
 		<title>Punctuation</title>
@@ -189,7 +184,6 @@
 		</variablelist>
 
 	</section>
-
 	 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-General_Tag_Usage_Guidelines-User_Interface_Objects">
 		<title>User Interface Objects</title>
 		 <para>
@@ -221,7 +215,6 @@
 		</variablelist>
 
 	</section>
-
 	 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-General_Tag_Usage_Guidelines-Questionable_Tags_or_Tags_to_Avoid">
 		<title>Questionable Tags, or Tags to Avoid</title>
 		 <para>
@@ -245,7 +238,6 @@
 		</variablelist>
 
 	</section>
-
 
 </chapter>
 
