@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<config xmlns="http://zanata.org/namespace/config/">
+  <url>https://translate.engineering.redhat.com/</url>
+  <project>docbook-usage-guide</project>
+  <project-version>6.1</project-version>
+  <project-type>podir</project-type>
+
+  <locales>
+    <locale>zh-Hans</locale>
+    <locale map-from="it-IT">it</locale>
+    <locale map-from="es-ES">es</locale>
+  </locales>
+
+</config>
+
