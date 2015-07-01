@@ -5,9 +5,9 @@
 ]>
 <book>
 	<xi:include href="Book_Info.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	 <xi:include href="preface.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	 <xi:include href="general-tag-usage.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	 <xi:include href="using-tables.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	 <xi:include href="Preface.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	 <xi:include href="General_Tag_Usage.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	 <xi:include href="Using_Tables.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 	 <xi:include href="Revision_History.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 	 <!--     	 <index />     -->
 </book>
