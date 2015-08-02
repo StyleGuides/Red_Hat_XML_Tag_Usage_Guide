@@ -35,7 +35,7 @@
 		 <example id="exam-Tips_for_Writers-DocBook_Tag_Usage_Guide-Documenting_Commands-Marking_up_Commands_in_Body_Text">
 			<title>Marking up Commands in Body Text</title>
 			 <para>
-				Use the &lt;command&gt;ifconfig&lt;/command&gt; command to configure network interfaces.
+				&lt;para&gt;Use the &lt;command&gt;ifconfig&lt;/command&gt; command to configure network interfaces.&lt;/para&gt;
 			</para>
 			 <para>
 				This is rendered as follows:
@@ -55,7 +55,7 @@
 		 <example id="exam-Tips_for_Writers-DocBook_Tag_Usage_Guide-Documenting_Commands-Marking_up_Commands_in_Examples">
 			<title>Marking up Commands in Examples</title>
 			 <para>
-				Enter the following command to determine the status of the firewall:
+				&lt;para&gt;Enter the following command to determine the status of the firewall:&lt;/para&gt;
 			</para>
 			 <para>
 				&lt;screen&gt;# service iptables status&lt;/screen&gt;
@@ -64,7 +64,7 @@
 				This is rendered as follows:
 			</para>
 			 <para>
-				Enter the following command to determine the status of the firewall: 
+				Enter the following command to determine the status of the firewall:
 <screen># service iptables status</screen>
 
 			</para>
@@ -89,7 +89,7 @@
 				This is rendered as follows:
 			</para>
 			 <para>
-				Enter the following command to configure the wobbly widget: 
+				Enter the following command to configure the wobbly widget:
 <screen># wobbly-config --color=true --SSL=true --home-dir=<replaceable>home&nbsp;directory</replaceable> \
 --allow-root=false --allow-remote=true --auto-update=true</screen>
 
@@ -128,7 +128,7 @@
 			 <para>
 				This is rendered as follows:
 			</para>
-			 
+
 <screen>$ adduser --user <replaceable>user&nbsp;name</replaceable> --homedir <replaceable>home&nbsp;directory</replaceable></screen>
 
 		</example>
