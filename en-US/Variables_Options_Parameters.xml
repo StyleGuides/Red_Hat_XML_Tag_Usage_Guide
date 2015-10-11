@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "DocBook_Tag_Usage_Guide.ent">
+%BOOK_ENTITIES;
+]>
+<section>
+        <title>Variables, Options, and Parameters</title>
+<para>
+How often have you been confused about whether to tag something as a variable, as an option, as optional, or even as a literal? Happens to me all the time. Hopefully this will help. I need help too; I admit it. Feel free to volunteer thoughts.
+</para>
+
+</section>
