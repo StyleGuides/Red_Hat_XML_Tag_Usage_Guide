@@ -5,9 +5,91 @@
 ]>
 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-Variables_Options_and_Parameters">
 	<title>Variables, Options, and Parameters</title>
-	<para>
-		How often have you been confused about whether to tag something as a variable, as an option, as optional, or even as a literal? Happens to me all the time. Hopefully this will help. I need help too; I admit it. Feel free to volunteer thoughts. Again I reiterate that the first port of call for tag usage guide lines should be <ulink url="http://www.docbook.org/tdg/en/html/docbook.html"><citetitle>DocBook: The Definitive Guide</citetitle></ulink>
+	 <para>
+		How often have you been confused about whether to tag something as a variable, as an option, as optional, or even as a literal? Happens to me all the time. Hopefully this will help. I need help too; I admit it. Feel free to volunteer thoughts.
 	</para>
+	 <para>
+		It might be a good idea to start with a few definitions, or at least what will serve as definitions.
+	</para>
+	 <variablelist>
+		<varlistentry id="varl-Tips_for_Writers-DocBook_Tag_Usage_Guide-Variables_Options_and_Parameters-Variable">
+			<term>Variable</term>
+			 <listitem>
+				<para>
+					A symbolic name associated with a value and whose associated value may be changed (from <ulink url="https://en.wikipedia.org/wiki/Variable">Wikipedia</ulink>. DocBook supports several tags that you can use for variables; I'll introduce them as needed.
+				</para>
+
+			</listitem>
+
+		</varlistentry>
+		 <varlistentry id="varl-Tips_for_Writers-DocBook_Tag_Usage_Guide-Variables_Options_and_Parameters-Option">
+			<term>Option</term>
+			 <listitem>
+				<para>
+					An option for a software command (from <ulink url="http://www.docbook.org/tdg/en/html/option.html" />). This definition sounds somewhat restrictive, because options can apply to more than just software commands. Ultimately, however, I think all options find their way to a command, so let's leave it at that for now.
+				</para>
+
+			</listitem>
+
+		</varlistentry>
+		 <varlistentry id="varl-Tips_for_Writers-DocBook_Tag_Usage_Guide-Variables_Options_and_Parameters-Optional">
+			<term>Optional</term>
+			 <listitem>
+				<para>
+					The Optional element indicates that a specified argument, option, or other text is optional. The precise meaning of "optional" varies according to the application or process begin documented. (From <ulink url="http://www.docbook.org/tdg/en/html/optional.html" />) Note the difference between this and &lt;option&gt;.
+				</para>
+
+			</listitem>
+
+		</varlistentry>
+		 <varlistentry id="varl-Tips_for_Writers-DocBook_Tag_Usage_Guide-Variables_Options_and_Parameters-Parameter">
+			<term>Parameter</term>
+			 <listitem>
+				<para>
+					This can be a bit of a pain. What it is depends on who you ask: 
+					<itemizedlist>
+						<listitem>
+							<para>
+								In computing a parameter is defined as "a reference or value that is passed to a function, procedure, subroutine, command, or program" (from <ulink url="https://en.wikipedia.org/wiki/Parameter#Computing" /> which actually gets it from <ulink url="http://www.thefreedictionary.com/parameter" />)
+							</para>
+
+						</listitem>
+						 <listitem>
+							<para>
+								<ulink url="http://www.docbook.org/tdg/en/html/parameter.html" /> declares a parameter to be "A value or a symbolic reference to a value". It states that "A parameter identifies something passed from one part of a computer system to another."
+							</para>
+						</listitem>
+
+					</itemizedlist>
+
+				</para>
+				 <para>
+					As you can see, it's a bit painful. I try to avoid it.
+				</para>
+
+			</listitem>
+
+		</varlistentry>
+		 <varlistentry id="varl-Tips_for_Writers-DocBook_Tag_Usage_Guide-Variables_Options_and_Parameters-Literal">
+			<term>Literal</term>
+			 <listitem>
+				<para>
+					<ulink url="http://www.docbook.org/tdg/en/html/literal.html" /> has its own description of this tag, and it's not something that we use a lot. Actually we use it a lot more than we should, and usually incorrectly. I'm going to ignore it for now, except perhaps to offer examples of when NOT to use it.
+				</para>
+
+			</listitem>
+
+		</varlistentry>
+
+	</variablelist>
+	 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-Variables_Options_and_Parameters-Examples">
+		<title>Examples</title>
+		 <para>
+			Descriptions and definitions are all well and good, but sometimes a few sound examples go a long way.
+		</para>
+		 <remark>Do this part soon</remark>
+
+	</section>
 
 </section>
 
