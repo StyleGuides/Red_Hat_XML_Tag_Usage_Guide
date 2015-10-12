@@ -3,10 +3,11 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "DocBook_Tag_Usage_Guide.ent">
 %BOOK_ENTITIES;
 ]>
-<section>
-        <title>My Title</title>
-<para>
-dummy text
-</para>
+<section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-My_Title">
+	<title>My Title</title>
+	<para>
+		dummy text
+	</para>
 
 </section>
+

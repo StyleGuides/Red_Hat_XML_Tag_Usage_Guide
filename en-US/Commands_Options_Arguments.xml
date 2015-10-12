@@ -3,10 +3,10 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "DocBook_Tag_Usage_Guide.ent">
 %BOOK_ENTITIES;
 ]>
-<section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-Commands_Options_and_Arguments">
-	<title>Commands, Options, and Arguments</title>
+<section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-Commands_Variables_and_Other_Problems">
+	<title>Commands, Variables, and Other Problems</title>
 	 <para>
-		This chapter describes the recommended DocBook tags to use for commands, options, arguments, and other parameters related primarily to command-line examples and procedures. Exceptions are common, and each case must be evaluated individually. The purpose of this chapter is to provide a starting point for delivering consistent results as often as possible.
+		This chapter describes the recommended DocBook tags to use for commands, options, arguments, and other parameters related to command-line examples and procedures, and also to using environment and system variables. Exceptions are common, and each case must be evaluated individually. The purpose of this chapter is to provide a starting point for delivering consistent results as often as possible.
 	</para>
 	 <note>
 		<para>
@@ -14,7 +14,7 @@
 		</para>
 
 	</note>
-	 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-Commands_Options_and_Arguments-Documenting_Commands">
+	 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-Commands_Variables_and_Other_Problems-Documenting_Commands">
 		<title>Documenting Commands</title>
 		 <para>
 			Commands generally appear in two main scenarios: inline, as part of a general discussion or description of the command; or in a displayed block, as part of an example or procedural step. The second scenario often includes several command options that apply to the specific example or task.
@@ -64,7 +64,7 @@
 				This is rendered as follows:
 			</para>
 			 <para>
-				Enter the following command to determine the status of the firewall:
+				Enter the following command to determine the status of the firewall: 
 <screen># service iptables status</screen>
 
 			</para>
@@ -89,7 +89,7 @@
 				This is rendered as follows:
 			</para>
 			 <para>
-				Enter the following command to configure the wobbly widget:
+				Enter the following command to configure the wobbly widget: 
 <screen># wobbly-config --color=true --SSL=true --home-dir=<replaceable>home&nbsp;directory</replaceable> \
 --allow-root=false --allow-remote=true --auto-update=true</screen>
 
@@ -104,7 +104,7 @@
 		</note>
 
 	</section>
-	 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-Commands_Options_and_Arguments-Documenting_Command_Options">
+	 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-Commands_Variables_and_Other_Problems-Documenting_Command_Options">
 		<title>Documenting Command Options</title>
 		 <formalpara id="form-Tips_for_Writers-DocBook_Tag_Usage_Guide-Documenting_Command_Options-Marking_up_Command_Options_in_Body_Text">
 			<title>Marking up Command Options in Body Text</title>
@@ -128,12 +128,12 @@
 			 <para>
 				This is rendered as follows:
 			</para>
-
+			 
 <screen>$ adduser --user <replaceable>user&nbsp;name</replaceable> --homedir <replaceable>home&nbsp;directory</replaceable></screen>
 
 		</example>
 
 	</section>
-
+	 <xi:include href="Variables_Options_Parameters.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>
 

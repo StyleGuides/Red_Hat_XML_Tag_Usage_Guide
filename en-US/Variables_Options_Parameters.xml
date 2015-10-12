@@ -3,10 +3,11 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "DocBook_Tag_Usage_Guide.ent">
 %BOOK_ENTITIES;
 ]>
-<section>
-        <title>Variables, Options, and Parameters</title>
-<para>
-How often have you been confused about whether to tag something as a variable, as an option, as optional, or even as a literal? Happens to me all the time. Hopefully this will help. I need help too; I admit it. Feel free to volunteer thoughts.
-</para>
+<section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-Variables_Options_and_Parameters">
+	<title>Variables, Options, and Parameters</title>
+	<para>
+		How often have you been confused about whether to tag something as a variable, as an option, as optional, or even as a literal? Happens to me all the time. Hopefully this will help. I need help too; I admit it. Feel free to volunteer thoughts. Again I reiterate that the first port of call for tag usage guide lines should be <ulink url="http://www.docbook.org/tdg/en/html/docbook.html"><citetitle>DocBook: The Definitive Guide</citetitle></ulink>
+	</para>
 
 </section>
+

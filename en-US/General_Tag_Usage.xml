@@ -8,14 +8,19 @@
 	 <para>
 		We have to start somewhere. The place to really start is <ulink url="www.docbook.org/tdg/en/html/docbook.html" /> Another useful discussion site is <ulink url="http://www.dpawson.co.uk/docbook/markup.html" /> although it is somewhat dated, and not all of the link targets are accessible.
 	</para>
-        <section><title>Files, File Names, and Directories</title>
-          <note><para>
-            This guide refers mostly to products that run on Linux and UNIX operating systems. Consequently, it's relatively safe to say that "everything is a file". There are always exceptions, but this is what we use a base.</para>
-          </note>
-          <para>
-            If you consider that everything is a file, life gets easier, because you don't have to introduce things like <![CDATA[<filename class="directory">]]> just because you're talking about the <filename>/etc</filename> directory.
-            </para>
-        </section>
+	 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-General_Tag_Usage_Guidelines-Files_File_Names_and_Directories">
+		<title>Files, File Names, and Directories</title>
+		 <note>
+			<para>
+				This guide refers mostly to products that run on Linux and UNIX operating systems. Consequently, it's relatively safe to say that "everything is a file". There are always exceptions, but this is what we use a base.
+			</para>
+
+		</note>
+		 <para>
+			If you consider that everything is a file, life gets easier, because you don't have to introduce things like <![CDATA[<filename class="directory">]]> just because you're talking about the <filename>/etc</filename> directory.
+		</para>
+
+	</section>
 	 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-General_Tag_Usage_Guidelines-Abbreviations_Acronyms_and_Initialisms">
 		<title>Abbreviations, Acronyms, and Initialisms</title>
 		 <para>
@@ -32,7 +37,7 @@
 	 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-General_Tag_Usage_Guidelines-API_Calls">
 		<title>API Calls</title>
 		 <para>
-			Only minimal discussion has occurred with respect to tagging API calls. The results so far are as follows:
+			Only minimal discussion has occurred with respect to tagging API calls. The results so far are as follows: 
 			<itemizedlist>
 				<listitem>
 					<para>
@@ -60,7 +65,7 @@
 		 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-Products_Projects_and_Applications-Products_and_Projects">
 			<title>Products and Projects</title>
 			 <para>
-				DocBook very kindly offers the following tags related to products:
+				DocBook very kindly offers the following tags related to products: 
 				<itemizedlist>
 					<listitem>
 						<para>
@@ -79,7 +84,7 @@
 
 			</para>
 			 <para>
-				Red&nbsp;Hat doesn't use either &lt;productnumber&gt; or &lt;productname&gt; tags at this point, except in the main book file. This is mainly due to overhead and ROI (see below). The following bear consideration:
+				Red&nbsp;Hat doesn't use either &lt;productnumber&gt; or &lt;productname&gt; tags at this point, except in the main book file. This is mainly due to overhead and ROI (see below). The following bear consideration: 
 				<itemizedlist>
 					<listitem>
 						<para>
