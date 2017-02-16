@@ -12,7 +12,11 @@ url="www.docbook.org/tdg/en/html/docbook.html" />.
 	 <section id="sect-Tips_for_Writers-DocBook_Tag_Usage_Guide-General_Tag_Usage_Guidelines-Abbreviations_Acronyms_and_Initialisms">
 		<title>Abbreviations, Acronyms, and Initialisms</title>
 		 <para>
-			<citetitle>The IBM Style Guide</citetitle> provides guidelines for DITA tags for highlighting (see p. 276). This is not intended or expected to be a comprehensive guide for how to tag various elements, but lacking any better reference, the Red&nbsp;Hat Cloud documentation team has adopted the recommendation to not tag abbreviations, acronyms, and initialisms.
+			<citetitle>The IBM Style Guide</citetitle> provides guidelines for
+DITA tags for highlighting (see p. 276). This is not intended or expected to be
+a comprehensive guide for how to tag various elements, but lacking any better
+reference, the Red&nbsp;Hat documentation team has elected
+to not tag abbreviations, acronyms, and initialisms.
 		</para>
 		 <note>
 			<para>
@@ -75,11 +79,16 @@ url="http://stylepedia.net" />
 
 			</para>
 			 <para>
-				Red&nbsp;Hat doesn't use either &lt;productnumber&gt; or &lt;productname&gt; tags at this point, except in the main book file. This is mainly due to overhead and ROI (see below). The following bear consideration:
+				Red&nbsp;Hat does not use either &lt;productnumber&gt; or
+&lt;productname&gt; tags at this point, except in the main book file. This is
+mainly due to overhead and ROI (see below). The following bear consideration:
 				<itemizedlist>
 					<listitem>
 						<para>
-							Purpose: Why are you tagging product names in the first place? To be semantically correct? This is a huge can of worms; tread carefully. If it's because your style sheets cause text tagged with &lt;productname&gt; tags to render differently, see the next point.
+							Purpose: Why are you tagging product names in the
+first place? To be semantically correct? This is a huge can of worms; tread
+carefully. Because your style sheets cause text tagged with
+&lt;productname&gt; tags to render differently, see the next point.
 						</para>
 
 					</listitem>
@@ -97,8 +106,15 @@ url="http://stylepedia.net" />
 					</listitem>
 					 <listitem>
 						<para>
-							Localization: Whether your team or company localizes product names or not, this is a good way to identify them. You should also have an accepted list of translations for each product, but that's a different topic.
+							Localization: Whether your team or company localizes
+product names or not, this is a good way to identify them. You should also have
+an accepted list of translations for each product.
 						</para>
+                        <note>
+                            <para>
+                                Red&nbsp;Hat does not, except in
+some exceptional circumstances, translate any product names.
+</para></note>
 
 					</listitem>
 
